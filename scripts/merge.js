@@ -48,9 +48,59 @@ const CHANNEL_MAPPING = {
     "CCTV-6"
   ],
 
+  "CCTV7": [
+    "CCTV7",
+    "CCTV-7"
+  ],
+
   "CCTV8": [
     "CCTV8",
     "CCTV-8"
+  ],
+
+  "CCTV9": [
+    "CCTV9",
+    "CCTV-9"
+  ],
+
+  "CCTV10": [
+    "CCTV10",
+    "CCTV-10"
+  ],
+
+  "CCTV11": [
+    "CCTV11",
+    "CCTV-11"
+  ],
+
+  "CCTV12": [
+    "CCTV12",
+    "CCTV-12"
+  ],
+
+  "CCTV13": [
+    "CCTV13",
+    "CCTV-13"
+  ],
+
+  "CCTV14": [
+    "CCTV14",
+    "CCTV-14"
+  ],
+
+  "CCTV15": [
+    "CCTV15",
+    "CCTV-15"
+  ],
+
+  "CCTV16": [
+    "CCTV16",
+    "CCTV-16"
+  ],
+
+  "CCTV17": [
+    "CCTV17",
+    "CCTV-17"
   ],
 
   "湖南卫视": [
@@ -169,7 +219,9 @@ const sources = fs
 
 function normalizeChannelName(name) {
 
-  if (!name) return "未知频道";
+  if (!name) {
+    return "未知频道";
+  }
 
   name = name
     .replace(/\[.*?\]/g, "")
@@ -230,6 +282,55 @@ function getGroup(name) {
 }
 
 /* =========================
+   频道排序
+========================= */
+
+function getChannelOrder(name) {
+
+  if (name.includes("CCTV5+")) {
+    return 5.5;
+  }
+
+  const cctvMatch =
+    name.match(/CCTV(\d+)/);
+
+  if (cctvMatch) {
+
+    return parseInt(
+      cctvMatch[1]
+    );
+  }
+
+  const satelliteOrder = {
+
+    "湖南卫视": 101,
+    "浙江卫视": 102,
+    "江苏卫视": 103,
+    "东方卫视": 104,
+    "北京卫视": 105,
+    "广东卫视": 106,
+    "深圳卫视": 107
+  };
+
+  if (satelliteOrder[name]) {
+    return satelliteOrder[name];
+  }
+
+  const hkOrder = {
+
+    "凤凰中文": 201,
+    "凤凰资讯": 202,
+    "翡翠台": 203
+  };
+
+  if (hkOrder[name]) {
+    return hkOrder[name];
+  }
+
+  return 9999;
+}
+
+/* =========================
    下载接口
 ========================= */
 
@@ -246,7 +347,10 @@ async function loadUrl(url) {
 
   } catch {
 
-    console.log("抓取失败:", url);
+    console.log(
+      "抓取失败:",
+      url
+    );
 
     return "";
   }
@@ -258,7 +362,8 @@ async function loadUrl(url) {
 
 async function checkStream(url) {
 
-  const start = Date.now();
+  const start =
+    Date.now();
 
   try {
 
@@ -271,13 +376,15 @@ async function checkStream(url) {
       timeout: 3000,
 
       headers: {
-        "User-Agent": "Mozilla/5.0"
+        "User-Agent":
+          "Mozilla/5.0"
       }
     });
 
     return {
       ok: true,
-      speed: Date.now() - start
+      speed:
+        Date.now() - start
     };
 
   } catch {
@@ -299,11 +406,15 @@ function addChannel(
   speed
 ) {
 
-  if (!url.startsWith("http")) {
+  if (
+    !url.startsWith("http")
+  ) {
     return;
   }
 
-  if (urlSet.has(url)) {
+  if (
+    urlSet.has(url)
+  ) {
     return;
   }
 
@@ -317,8 +428,11 @@ function addChannel(
   }
 
   groups[group].push({
+
     name,
+
     url,
+
     speed
   });
 }
@@ -341,7 +455,8 @@ async function parse(text) {
   ) {
 
     if (
-      tasks.length >= MAX_CHECK
+      tasks.length >=
+      MAX_CHECK
     ) {
       break;
     }
@@ -349,7 +464,9 @@ async function parse(text) {
     const line =
       lines[i].trim();
 
-    if (!line) continue;
+    if (!line) {
+      continue;
+    }
 
     let rawName = "";
     let url = "";
@@ -357,7 +474,9 @@ async function parse(text) {
     /* M3U */
 
     if (
-      line.includes("#EXTINF")
+      line.includes(
+        "#EXTINF"
+      )
     ) {
 
       rawName =
@@ -367,7 +486,9 @@ async function parse(text) {
           ?.trim();
 
       url =
-        lines[i + 1]?.trim();
+        lines[
+          i + 1
+        ]?.trim();
     }
 
     /* TXT */
@@ -379,7 +500,9 @@ async function parse(text) {
       const arr =
         line.split(",");
 
-      if (arr.length < 2) {
+      if (
+        arr.length < 2
+      ) {
         continue;
       }
 
@@ -390,7 +513,9 @@ async function parse(text) {
         arr[1].trim();
     }
 
-    if (!url) continue;
+    if (!url) {
+      continue;
+    }
 
     const name =
       normalizeChannelName(
@@ -407,21 +532,27 @@ async function parse(text) {
       continue;
     }
 
-    tasks.push(async () => {
+    tasks.push(
+      async () => {
 
-      const result =
-        await checkStream(url);
+        const result =
+          await checkStream(
+            url
+          );
 
-      if (!result.ok) {
-        return;
+        if (
+          !result.ok
+        ) {
+          return;
+        }
+
+        addChannel(
+          name,
+          url,
+          result.speed
+        );
       }
-
-      addChannel(
-        name,
-        url,
-        result.speed
-      );
-    });
+    );
   }
 
   /* 并发测速 */
@@ -441,7 +572,9 @@ async function parse(text) {
       );
 
     await Promise.all(
-      chunk.map(fn => fn())
+      chunk.map(
+        fn => fn()
+      )
     );
 
     console.log(
@@ -477,8 +610,36 @@ async function run() {
   for (const group in groups) {
 
     groups[group].sort(
-      (a, b) =>
-        a.speed - b.speed
+      (a, b) => {
+
+        const orderA =
+          getChannelOrder(
+            a.name
+          );
+
+        const orderB =
+          getChannelOrder(
+            b.name
+          );
+
+        /* 频道排序 */
+
+        if (
+          orderA !== orderB
+        ) {
+          return (
+            orderA -
+            orderB
+          );
+        }
+
+        /* 同频道测速排序 */
+
+        return (
+          a.speed -
+          b.speed
+        );
+      }
     );
   }
 
