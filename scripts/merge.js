@@ -1,12 +1,8 @@
 import fs from "fs";
 import axios from "axios";
-import ffmpeg from "fluent-ffmpeg";
-import ffprobe from "ffprobe-static";
-
-ffmpeg.setFfprobePath(ffprobe.path);
 
 /* =========================
-   频道别名映射
+   频道映射
 ========================= */
 
 const CHANNEL_MAPPING = {
@@ -126,9 +122,7 @@ const CHANNEL_CATEGORIES = {
     "CCTV14",
     "CCTV15",
     "CCTV16",
-    "CCTV17",
-    "CCTV4K",
-    "CCTV8K"
+    "CCTV17"
   ],
 
   "卫视频道": [
@@ -240,7 +234,7 @@ async function loadUrl(url) {
 
     const { data } =
       await axios.get(url, {
-        timeout: 15000
+        timeout: 10000
       });
 
     return data;
@@ -254,64 +248,38 @@ async function loadUrl(url) {
 }
 
 /* =========================
-   测速检测
+   极速测速
 ========================= */
 
 async function checkStream(url) {
 
-  return new Promise((resolve) => {
+  const start = Date.now();
 
-    const start = Date.now();
+  try {
 
-    ffmpeg.ffprobe(url, (err, data) => {
+    await axios.get(url, {
 
-      if (err) {
+      timeout: 5000,
 
-        return resolve({
-          ok: false,
-          speed: 99999,
-          width: 0,
-          height: 0
-        });
+      responseType: "stream",
+
+      headers: {
+        "User-Agent": "Mozilla/5.0"
       }
-
-      const speed =
-        Date.now() - start;
-
-      let width = 0;
-      let height = 0;
-
-      const video =
-        data.streams.find(
-          s => s.codec_type === "video"
-        );
-
-      if (video) {
-
-        width = video.width || 0;
-        height = video.height || 0;
-      }
-
-      resolve({
-        ok: true,
-        speed,
-        width,
-        height
-      });
     });
 
-    setTimeout(() => {
+    return {
+      ok: true,
+      speed: Date.now() - start
+    };
 
-      resolve({
-        ok: false,
-        speed: 99999,
-        width: 0,
-        height: 0
-      });
+  } catch {
 
-    }, 8000);
-
-  });
+    return {
+      ok: false,
+      speed: 99999
+    };
+  }
 }
 
 /* =========================
@@ -321,7 +289,7 @@ async function checkStream(url) {
 function addChannel(
   name,
   url,
-  result
+  speed
 ) {
 
   if (!url.startsWith("http")) {
@@ -343,9 +311,7 @@ function addChannel(
   groups[group].push({
     name,
     url,
-    speed: result.speed,
-    width: result.width,
-    height: result.height
+    speed
   });
 }
 
@@ -357,6 +323,8 @@ async function parse(text) {
 
   const lines = text.split("\n");
 
+  const tasks = [];
+
   for (let i = 0; i < lines.length; i++) {
 
     const line = lines[i].trim();
@@ -366,7 +334,7 @@ async function parse(text) {
     let rawName = "";
     let url = "";
 
-    /* m3u */
+    /* M3U */
 
     if (line.includes("#EXTINF")) {
 
@@ -377,7 +345,7 @@ async function parse(text) {
         lines[i + 1]?.trim();
     }
 
-    /* txt */
+    /* TXT */
 
     else if (line.includes(",")) {
 
@@ -392,25 +360,43 @@ async function parse(text) {
 
     if (!url) continue;
 
-    const name =
-      normalizeChannelName(rawName);
+    tasks.push(async () => {
 
-    console.log("测速:", name);
+      const name =
+        normalizeChannelName(rawName);
 
-    const result =
-      await checkStream(url);
+      const result =
+        await checkStream(url);
 
-    if (!result.ok) {
+      if (!result.ok) return;
 
-      console.log("失效:", name);
+      addChannel(
+        name,
+        url,
+        result.speed
+      );
+    });
+  }
 
-      continue;
-    }
+  /* 并发测速 */
 
-    addChannel(
-      name,
-      url,
-      result
+  const batch = 50;
+
+  for (
+    let i = 0;
+    i < tasks.length;
+    i += batch
+  ) {
+
+    const chunk =
+      tasks.slice(i, i + batch);
+
+    await Promise.all(
+      chunk.map(fn => fn())
+    );
+
+    console.log(
+      `完成 ${i}/${tasks.length}`
     );
   }
 }
@@ -431,28 +417,14 @@ async function run() {
     await parse(text);
   }
 
-  /* 排序 */
+  /* 按速度排序 */
 
   for (const group in groups) {
 
-    groups[group].sort((a, b) => {
-
-      const aRes =
-        a.width * a.height;
-
-      const bRes =
-        b.width * b.height;
-
-      /* 分辨率优先 */
-
-      if (aRes !== bRes) {
-        return bRes - aRes;
-      }
-
-      /* 速度优先 */
-
-      return a.speed - b.speed;
-    });
+    groups[group].sort(
+      (a, b) =>
+        a.speed - b.speed
+    );
   }
 
   /* 输出 */
