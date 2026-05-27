@@ -3,7 +3,7 @@ export default {
   async fetch() {
 
     const url =
-      "https://raw.githubusercontent.com/你的用户名/iptv-auto/main/output/tv.m3u";
+      "https://raw.githubusercontent.com/qingtingjjjjjjj/iptv-auto/main/output/tv.m3u";
 
     const res = await fetch(url);
 
