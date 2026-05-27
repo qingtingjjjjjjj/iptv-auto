@@ -1,5 +1,9 @@
 import fs from "fs";
 import axios from "axios";
+import ffmpeg from "fluent-ffmpeg";
+import ffprobe from "ffprobe-static";
+
+ffmpeg.setFfprobePath(ffprobe.path);
 
 /* =========================
    频道别名映射
@@ -11,36 +15,30 @@ const CHANNEL_MAPPING = {
     "CCTV1",
     "CCTV-1",
     "CCTV1综合",
-    "CCTV-1综合",
-    "央视1",
-    "央视综合"
+    "央视1"
   ],
 
   "CCTV2": [
     "CCTV2",
     "CCTV-2",
-    "CCTV2财经",
-    "央视财经"
+    "CCTV2财经"
   ],
 
   "CCTV3": [
     "CCTV3",
-    "CCTV-3",
-    "综艺频道"
+    "CCTV-3"
   ],
 
   "CCTV4": [
     "CCTV4",
-    "CCTV-4",
-    "中文国际"
+    "CCTV-4"
   ],
 
   "CCTV5": [
     "CCTV5",
     "CCTV-5",
-    "CCTV体育",
     "央视体育",
-    "CCTV5HD"
+    "CCTV体育"
   ],
 
   "CCTV5+": [
@@ -51,25 +49,21 @@ const CHANNEL_MAPPING = {
 
   "CCTV6": [
     "CCTV6",
-    "CCTV-6",
-    "电影频道"
+    "CCTV-6"
   ],
 
   "CCTV8": [
     "CCTV8",
-    "CCTV-8",
-    "电视剧频道"
+    "CCTV-8"
   ],
 
   "湖南卫视": [
     "湖南卫视",
-    "湖南卫视HD",
     "HNWS"
   ],
 
   "浙江卫视": [
-    "浙江卫视",
-    "浙江卫视HD"
+    "浙江卫视"
   ],
 
   "江苏卫视": [
@@ -109,7 +103,7 @@ const CHANNEL_MAPPING = {
 };
 
 /* =========================
-   频道分类
+   分类
 ========================= */
 
 const CHANNEL_CATEGORIES = {
@@ -160,6 +154,20 @@ const CHANNEL_CATEGORIES = {
 };
 
 /* =========================
+   初始化
+========================= */
+
+const groups = {};
+
+const urlSet = new Set();
+
+const sources = fs
+  .readFileSync("./api/sources.txt", "utf-8")
+  .split("\n")
+  .map(i => i.trim())
+  .filter(Boolean);
+
+/* =========================
    标准化频道名
 ========================= */
 
@@ -176,7 +184,8 @@ function normalizeChannelName(name) {
 
   for (const standard in CHANNEL_MAPPING) {
 
-    const aliases = CHANNEL_MAPPING[standard];
+    const aliases =
+      CHANNEL_MAPPING[standard];
 
     if (
       aliases.some(alias =>
@@ -191,7 +200,7 @@ function normalizeChannelName(name) {
 }
 
 /* =========================
-   分类
+   获取分组
 ========================= */
 
 function getGroup(name) {
@@ -222,20 +231,6 @@ function getGroup(name) {
 }
 
 /* =========================
-   初始化
-========================= */
-
-const groups = {};
-
-const urlSet = new Set();
-
-const sources = fs
-  .readFileSync("./api/sources.txt", "utf-8")
-  .split("\n")
-  .map(i => i.trim())
-  .filter(Boolean);
-
-/* =========================
    下载接口
 ========================= */
 
@@ -243,25 +238,91 @@ async function loadUrl(url) {
 
   try {
 
-    const { data } = await axios.get(url, {
-      timeout: 15000
-    });
+    const { data } =
+      await axios.get(url, {
+        timeout: 15000
+      });
 
     return data;
 
-  } catch (e) {
+  } catch {
 
-    console.log("失败:", url);
+    console.log("抓取失败:", url);
 
     return "";
   }
 }
 
 /* =========================
+   测速检测
+========================= */
+
+async function checkStream(url) {
+
+  return new Promise((resolve) => {
+
+    const start = Date.now();
+
+    ffmpeg.ffprobe(url, (err, data) => {
+
+      if (err) {
+
+        return resolve({
+          ok: false,
+          speed: 99999,
+          width: 0,
+          height: 0
+        });
+      }
+
+      const speed =
+        Date.now() - start;
+
+      let width = 0;
+      let height = 0;
+
+      const video =
+        data.streams.find(
+          s => s.codec_type === "video"
+        );
+
+      if (video) {
+
+        width = video.width || 0;
+        height = video.height || 0;
+      }
+
+      resolve({
+        ok: true,
+        speed,
+        width,
+        height
+      });
+    });
+
+    setTimeout(() => {
+
+      resolve({
+        ok: false,
+        speed: 99999,
+        width: 0,
+        height: 0
+      });
+
+    }, 8000);
+
+  });
+}
+
+/* =========================
    添加频道
 ========================= */
 
-function addChannel(name, url) {
+function addChannel(
+  name,
+  url,
+  result
+) {
 
   if (!url.startsWith("http")) {
     return;
@@ -281,15 +342,18 @@ function addChannel(name, url) {
 
   groups[group].push({
     name,
-    url
+    url,
+    speed: result.speed,
+    width: result.width,
+    height: result.height
   });
 }
 
 /* =========================
-   解析 TXT / M3U
+   解析
 ========================= */
 
-function parse(text) {
+async function parse(text) {
 
   const lines = text.split("\n");
 
@@ -299,21 +363,18 @@ function parse(text) {
 
     if (!line) continue;
 
+    let rawName = "";
+    let url = "";
+
     /* m3u */
 
     if (line.includes("#EXTINF")) {
 
-      const rawName =
+      rawName =
         line.split(",").pop()?.trim();
 
-      const name =
-        normalizeChannelName(rawName);
-
-      const url = lines[i + 1]?.trim();
-
-      if (!url) continue;
-
-      addChannel(name, url);
+      url =
+        lines[i + 1]?.trim();
     }
 
     /* txt */
@@ -324,20 +385,38 @@ function parse(text) {
 
       if (arr.length < 2) continue;
 
-      const rawName = arr[0].trim();
+      rawName = arr[0].trim();
 
-      const name =
-        normalizeChannelName(rawName);
-
-      const url = arr[1].trim();
-
-      addChannel(name, url);
+      url = arr[1].trim();
     }
+
+    if (!url) continue;
+
+    const name =
+      normalizeChannelName(rawName);
+
+    console.log("测速:", name);
+
+    const result =
+      await checkStream(url);
+
+    if (!result.ok) {
+
+      console.log("失效:", name);
+
+      continue;
+    }
+
+    addChannel(
+      name,
+      url,
+      result
+    );
   }
 }
 
 /* =========================
-   输出
+   主程序
 ========================= */
 
 async function run() {
@@ -346,14 +425,42 @@ async function run() {
 
     console.log("抓取:", url);
 
-    const text = await loadUrl(url);
+    const text =
+      await loadUrl(url);
 
-    parse(text);
+    await parse(text);
   }
+
+  /* 排序 */
+
+  for (const group in groups) {
+
+    groups[group].sort((a, b) => {
+
+      const aRes =
+        a.width * a.height;
+
+      const bRes =
+        b.width * b.height;
+
+      /* 分辨率优先 */
+
+      if (aRes !== bRes) {
+        return bRes - aRes;
+      }
+
+      /* 速度优先 */
+
+      return a.speed - b.speed;
+    });
+  }
+
+  /* 输出 */
 
   let txt = "";
 
-  let m3u = "#EXTM3U\n\n";
+  let m3u =
+    "#EXTM3U\n\n";
 
   for (const group in groups) {
 
@@ -361,12 +468,14 @@ async function run() {
 
     for (const item of groups[group]) {
 
-      txt += `${item.name},${item.url}\n`;
+      txt +=
+        `${item.name},${item.url}\n`;
 
       m3u +=
         `#EXTINF:-1 group-title="${group}",${item.name}\n`;
 
-      m3u += `${item.url}\n`;
+      m3u +=
+        `${item.url}\n`;
     }
 
     txt += "\n";
