@@ -155,6 +155,8 @@ const groups = {};
 
 const urlSet = new Set();
 
+const MAX_CHECK = 3000;
+
 const sources = fs
   .readFileSync("./api/sources.txt", "utf-8")
   .split("\n")
@@ -172,7 +174,10 @@ function normalizeChannelName(name) {
   name = name
     .replace(/\[.*?\]/g, "")
     .replace(/\(.*?\)/g, "")
-    .replace(/高清|超清|HD|HEVC|H265|HDR|4K/gi, "")
+    .replace(
+      /高清|超清|HD|HEVC|H265|HDR|4K/gi,
+      ""
+    )
     .replace(/\s+/g, "")
     .trim();
 
@@ -257,11 +262,13 @@ async function checkStream(url) {
 
   try {
 
-    await axios.get(url, {
+    await axios({
 
-      timeout: 5000,
+      url,
 
-      responseType: "stream",
+      method: "HEAD",
+
+      timeout: 3000,
 
       headers: {
         "User-Agent": "Mozilla/5.0"
@@ -302,7 +309,8 @@ function addChannel(
 
   urlSet.add(url);
 
-  const group = getGroup(name);
+  const group =
+    getGroup(name);
 
   if (!groups[group]) {
     groups[group] = [];
@@ -321,13 +329,25 @@ function addChannel(
 
 async function parse(text) {
 
-  const lines = text.split("\n");
+  const lines =
+    text.split("\n");
 
   const tasks = [];
 
-  for (let i = 0; i < lines.length; i++) {
+  for (
+    let i = 0;
+    i < lines.length;
+    i++
+  ) {
 
-    const line = lines[i].trim();
+    if (
+      tasks.length >= MAX_CHECK
+    ) {
+      break;
+    }
+
+    const line =
+      lines[i].trim();
 
     if (!line) continue;
 
@@ -336,10 +356,15 @@ async function parse(text) {
 
     /* M3U */
 
-    if (line.includes("#EXTINF")) {
+    if (
+      line.includes("#EXTINF")
+    ) {
 
       rawName =
-        line.split(",").pop()?.trim();
+        line
+          .split(",")
+          .pop()
+          ?.trim();
 
       url =
         lines[i + 1]?.trim();
@@ -347,28 +372,49 @@ async function parse(text) {
 
     /* TXT */
 
-    else if (line.includes(",")) {
+    else if (
+      line.includes(",")
+    ) {
 
-      const arr = line.split(",");
+      const arr =
+        line.split(",");
 
-      if (arr.length < 2) continue;
+      if (arr.length < 2) {
+        continue;
+      }
 
-      rawName = arr[0].trim();
+      rawName =
+        arr[0].trim();
 
-      url = arr[1].trim();
+      url =
+        arr[1].trim();
     }
 
     if (!url) continue;
 
-    tasks.push(async () => {
+    const name =
+      normalizeChannelName(
+        rawName
+      );
 
-      const name =
-        normalizeChannelName(rawName);
+    /* 只保留主流频道 */
+
+    if (
+      !/CCTV|卫视|凤凰|翡翠/.test(
+        name
+      )
+    ) {
+      continue;
+    }
+
+    tasks.push(async () => {
 
       const result =
         await checkStream(url);
 
-      if (!result.ok) return;
+      if (!result.ok) {
+        return;
+      }
 
       addChannel(
         name,
@@ -380,7 +426,7 @@ async function parse(text) {
 
   /* 并发测速 */
 
-  const batch = 50;
+  const batch = 200;
 
   for (
     let i = 0;
@@ -389,14 +435,20 @@ async function parse(text) {
   ) {
 
     const chunk =
-      tasks.slice(i, i + batch);
+      tasks.slice(
+        i,
+        i + batch
+      );
 
     await Promise.all(
       chunk.map(fn => fn())
     );
 
     console.log(
-      `完成 ${i}/${tasks.length}`
+      `完成 ${Math.min(
+        i + batch,
+        tasks.length
+      )}/${tasks.length}`
     );
   }
 }
@@ -409,7 +461,10 @@ async function run() {
 
   for (const url of sources) {
 
-    console.log("抓取:", url);
+    console.log(
+      "抓取:",
+      url
+    );
 
     const text =
       await loadUrl(url);
@@ -417,7 +472,7 @@ async function run() {
     await parse(text);
   }
 
-  /* 按速度排序 */
+  /* 排序 */
 
   for (const group in groups) {
 
@@ -427,16 +482,19 @@ async function run() {
     );
   }
 
-  /* 输出 */
+  /* 输出 TXT */
 
   let txt = "";
+
+  /* 输出 M3U */
 
   let m3u =
     "#EXTM3U\n\n";
 
   for (const group in groups) {
 
-    txt += `${group},#genre#\n`;
+    txt +=
+      `${group},#genre#\n`;
 
     for (const item of groups[group]) {
 
@@ -451,12 +509,16 @@ async function run() {
     }
 
     txt += "\n";
+
     m3u += "\n";
   }
 
-  fs.mkdirSync("./output", {
-    recursive: true
-  });
+  fs.mkdirSync(
+    "./output",
+    {
+      recursive: true
+    }
+  );
 
   fs.writeFileSync(
     "./output/tv.txt",
@@ -468,7 +530,9 @@ async function run() {
     m3u
   );
 
-  console.log("生成完成");
+  console.log(
+    "生成完成"
+  );
 }
 
 run();
