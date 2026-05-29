@@ -1,4 +1,3 @@
-```js
 import fs from "fs";
 import axios from "axios";
 
@@ -34,8 +33,7 @@ const CHANNEL_MAPPING = {
   "CCTV5": [
     "CCTV5",
     "CCTV-5",
-    "央视体育",
-    "CCTV体育"
+    "央视体育"
   ],
 
   "CCTV5+": [
@@ -105,8 +103,7 @@ const CHANNEL_MAPPING = {
   ],
 
   "湖南卫视": [
-    "湖南卫视",
-    "HNWS"
+    "湖南卫视"
   ],
 
   "浙江卫视": [
@@ -134,18 +131,15 @@ const CHANNEL_MAPPING = {
   ],
 
   "凤凰中文": [
-    "凤凰中文",
-    "凤凰中文台"
+    "凤凰中文"
   ],
 
   "凤凰资讯": [
-    "凤凰资讯",
-    "凤凰资讯台"
+    "凤凰资讯"
   ],
 
   "翡翠台": [
-    "翡翠台",
-    "TVB翡翠台"
+    "翡翠台"
   ]
 };
 
@@ -443,8 +437,6 @@ async function parse(text) {
     let rawName = "";
     let url = "";
 
-    /* M3U */
-
     if (
       line.includes(
         "#EXTINF"
@@ -462,8 +454,6 @@ async function parse(text) {
           i + 1
         ]?.trim();
     }
-
-    /* TXT */
 
     else if (
       line.includes(",")
@@ -540,16 +530,19 @@ async function parse(text) {
     );
 
     console.log(
-      `完成 ${Math.min(
+      "完成 " +
+      Math.min(
         i + batch,
         tasks.length
-      )}/${tasks.length}`
+      ) +
+      "/" +
+      tasks.length
     );
   }
 }
 
 /* =========================
-   加载自定义源
+   自定义源
 ========================= */
 
 function loadCustomSources() {
@@ -618,9 +611,7 @@ function loadCustomSources() {
       const arr =
         text.split(",");
 
-      if (
-        arr.length < 2
-      ) {
+      if (arr.length < 2) {
         continue;
       }
 
@@ -659,7 +650,7 @@ async function run() {
     await parse(text);
   }
 
-  /* 加载自定义源 */
+  /* 自定义源 */
 
   loadCustomSources();
 
@@ -749,4 +740,4 @@ async function run() {
 }
 
 run();
-```
+
