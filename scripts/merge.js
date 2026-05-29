@@ -100,46 +100,6 @@ const CHANNEL_MAPPING = {
   "CCTV17": [
     "CCTV17",
     "CCTV-17"
-  ],
-
-  "湖南卫视": [
-    "湖南卫视"
-  ],
-
-  "浙江卫视": [
-    "浙江卫视"
-  ],
-
-  "江苏卫视": [
-    "江苏卫视"
-  ],
-
-  "东方卫视": [
-    "东方卫视"
-  ],
-
-  "北京卫视": [
-    "北京卫视"
-  ],
-
-  "广东卫视": [
-    "广东卫视"
-  ],
-
-  "深圳卫视": [
-    "深圳卫视"
-  ],
-
-  "凤凰中文": [
-    "凤凰中文"
-  ],
-
-  "凤凰资讯": [
-    "凤凰资讯"
-  ],
-
-  "翡翠台": [
-    "翡翠台"
   ]
 };
 
@@ -168,22 +128,6 @@ const CHANNEL_CATEGORIES = {
     "CCTV15",
     "CCTV16",
     "CCTV17"
-  ],
-
-  "卫视频道": [
-    "湖南卫视",
-    "浙江卫视",
-    "江苏卫视",
-    "东方卫视",
-    "北京卫视",
-    "广东卫视",
-    "深圳卫视"
-  ],
-
-  "港澳台": [
-    "凤凰中文",
-    "凤凰资讯",
-    "翡翠台"
   ]
 };
 
@@ -437,8 +381,10 @@ async function parse(text) {
     let rawName = "";
     let url = "";
 
+    /* M3U */
+
     if (
-      line.includes(
+      line.startsWith(
         "#EXTINF"
       )
     ) {
@@ -454,6 +400,8 @@ async function parse(text) {
           i + 1
         ]?.trim();
     }
+
+    /* TXT */
 
     else if (
       line.includes(",")
@@ -571,25 +519,29 @@ function loadCustomSources() {
   let currentGroup =
     "自定义频道";
 
-  for (const line of lines) {
+  for (
+    let i = 0;
+    i < lines.length;
+    i++
+  ) {
 
-    const text =
-      line.trim();
+    const line =
+      lines[i].trim();
 
-    if (!text) {
+    if (!line) {
       continue;
     }
 
-    /* 分组 */
+    /* TXT 分组 */
 
     if (
-      text.includes(
+      line.includes(
         "#genre#"
       )
     ) {
 
       currentGroup =
-        text
+        line
           .split(",")[0]
           .trim();
 
@@ -602,16 +554,72 @@ function loadCustomSources() {
       continue;
     }
 
-    /* 频道 */
+    /* M3U */
 
     if (
-      text.includes(",")
+      line.startsWith(
+        "#EXTINF"
+      )
+    ) {
+
+      const name =
+        line
+          .split(",")
+          .pop()
+          ?.trim();
+
+      const url =
+        lines[
+          i + 1
+        ]?.trim();
+
+      if (
+        !name ||
+        !url
+      ) {
+        continue;
+      }
+
+      const groupMatch =
+        line.match(
+          /group-title="(.*?)"/
+        );
+
+      let group =
+        currentGroup;
+
+      if (
+        groupMatch &&
+        groupMatch[1]
+      ) {
+        group =
+          groupMatch[1];
+      }
+
+      addChannel(
+        normalizeChannelName(
+          name
+        ),
+        url,
+        0,
+        group
+      );
+
+      continue;
+    }
+
+    /* TXT */
+
+    if (
+      line.includes(",")
     ) {
 
       const arr =
-        text.split(",");
+        line.split(",");
 
-      if (arr.length < 2) {
+      if (
+        arr.length < 2
+      ) {
         continue;
       }
 
@@ -622,7 +630,9 @@ function loadCustomSources() {
         arr[1].trim();
 
       addChannel(
-        name,
+        normalizeChannelName(
+          name
+        ),
         url,
         0,
         currentGroup
@@ -739,5 +749,24 @@ async function run() {
   );
 }
 
-run();
+/* =========================
+   启动
+========================= */
+
+run()
+  .then(() => {
+
+    console.log(
+      "任务结束"
+    );
+
+    process.exit(0);
+
+  })
+  .catch(err => {
+
+    console.error(err);
+
+    process.exit(1);
+  });
 
