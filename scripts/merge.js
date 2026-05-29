@@ -1,3 +1,4 @@
+```js
 import fs from "fs";
 import axios from "axios";
 
@@ -185,11 +186,6 @@ const CHANNEL_CATEGORIES = {
     "深圳卫视"
   ],
 
-  "体育频道": [
-    "CCTV5",
-    "CCTV5+"
-  ],
-
   "港澳台": [
     "凤凰中文",
     "凤凰资讯",
@@ -282,7 +278,7 @@ function getGroup(name) {
 }
 
 /* =========================
-   频道排序
+   排序
 ========================= */
 
 function getChannelOrder(name) {
@@ -299,32 +295,6 @@ function getChannelOrder(name) {
     return parseInt(
       cctvMatch[1]
     );
-  }
-
-  const satelliteOrder = {
-
-    "湖南卫视": 101,
-    "浙江卫视": 102,
-    "江苏卫视": 103,
-    "东方卫视": 104,
-    "北京卫视": 105,
-    "广东卫视": 106,
-    "深圳卫视": 107
-  };
-
-  if (satelliteOrder[name]) {
-    return satelliteOrder[name];
-  }
-
-  const hkOrder = {
-
-    "凤凰中文": 201,
-    "凤凰资讯": 202,
-    "翡翠台": 203
-  };
-
-  if (hkOrder[name]) {
-    return hkOrder[name];
   }
 
   return 9999;
@@ -403,7 +373,8 @@ async function checkStream(url) {
 function addChannel(
   name,
   url,
-  speed
+  speed,
+  customGroup = null
 ) {
 
   if (
@@ -421,6 +392,7 @@ function addChannel(
   urlSet.add(url);
 
   const group =
+    customGroup ||
     getGroup(name);
 
   if (!groups[group]) {
@@ -438,7 +410,7 @@ function addChannel(
 }
 
 /* =========================
-   解析
+   解析公开源
 ========================= */
 
 async function parse(text) {
@@ -522,16 +494,6 @@ async function parse(text) {
         rawName
       );
 
-    /* 只保留主流频道 */
-
-    if (
-      !/CCTV|卫视|凤凰|翡翠/.test(
-        name
-      )
-    ) {
-      continue;
-    }
-
     tasks.push(
       async () => {
 
@@ -587,6 +549,98 @@ async function parse(text) {
 }
 
 /* =========================
+   加载自定义源
+========================= */
+
+function loadCustomSources() {
+
+  if (
+    !fs.existsSync(
+      "./config/custom.txt"
+    )
+  ) {
+    return;
+  }
+
+  console.log(
+    "加载自定义源"
+  );
+
+  const text =
+    fs.readFileSync(
+      "./config/custom.txt",
+      "utf-8"
+    );
+
+  const lines =
+    text.split("\n");
+
+  let currentGroup =
+    "自定义频道";
+
+  for (const line of lines) {
+
+    const text =
+      line.trim();
+
+    if (!text) {
+      continue;
+    }
+
+    /* 分组 */
+
+    if (
+      text.includes(
+        "#genre#"
+      )
+    ) {
+
+      currentGroup =
+        text
+          .split(",")[0]
+          .trim();
+
+      if (
+        !groups[currentGroup]
+      ) {
+        groups[currentGroup] = [];
+      }
+
+      continue;
+    }
+
+    /* 频道 */
+
+    if (
+      text.includes(",")
+    ) {
+
+      const arr =
+        text.split(",");
+
+      if (
+        arr.length < 2
+      ) {
+        continue;
+      }
+
+      const name =
+        arr[0].trim();
+
+      const url =
+        arr[1].trim();
+
+      addChannel(
+        name,
+        url,
+        0,
+        currentGroup
+      );
+    }
+  }
+}
+
+/* =========================
    主程序
 ========================= */
 
@@ -605,6 +659,10 @@ async function run() {
     await parse(text);
   }
 
+  /* 加载自定义源 */
+
+  loadCustomSources();
+
   /* 排序 */
 
   for (const group in groups) {
@@ -622,8 +680,6 @@ async function run() {
             b.name
           );
 
-        /* 频道排序 */
-
         if (
           orderA !== orderB
         ) {
@@ -633,8 +689,6 @@ async function run() {
           );
         }
 
-        /* 同频道测速排序 */
-
         return (
           a.speed -
           b.speed
@@ -643,11 +697,9 @@ async function run() {
     );
   }
 
-  /* 输出 TXT */
+  /* 输出 */
 
   let txt = "";
-
-  /* 输出 M3U */
 
   let m3u =
     "#EXTM3U\n\n";
@@ -697,3 +749,4 @@ async function run() {
 }
 
 run();
+```
