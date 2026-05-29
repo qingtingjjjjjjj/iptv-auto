@@ -40,66 +40,6 @@ const CHANNEL_MAPPING = {
     "CCTV5+",
     "CCTV-5+",
     "赛事频道"
-  ],
-
-  "CCTV6": [
-    "CCTV6",
-    "CCTV-6"
-  ],
-
-  "CCTV7": [
-    "CCTV7",
-    "CCTV-7"
-  ],
-
-  "CCTV8": [
-    "CCTV8",
-    "CCTV-8"
-  ],
-
-  "CCTV9": [
-    "CCTV9",
-    "CCTV-9"
-  ],
-
-  "CCTV10": [
-    "CCTV10",
-    "CCTV-10"
-  ],
-
-  "CCTV11": [
-    "CCTV11",
-    "CCTV-11"
-  ],
-
-  "CCTV12": [
-    "CCTV12",
-    "CCTV-12"
-  ],
-
-  "CCTV13": [
-    "CCTV13",
-    "CCTV-13"
-  ],
-
-  "CCTV14": [
-    "CCTV14",
-    "CCTV-14"
-  ],
-
-  "CCTV15": [
-    "CCTV15",
-    "CCTV-15"
-  ],
-
-  "CCTV16": [
-    "CCTV16",
-    "CCTV-16"
-  ],
-
-  "CCTV17": [
-    "CCTV17",
-    "CCTV-17"
   ]
 };
 
@@ -115,19 +55,7 @@ const CHANNEL_CATEGORIES = {
     "CCTV3",
     "CCTV4",
     "CCTV5",
-    "CCTV5+",
-    "CCTV6",
-    "CCTV7",
-    "CCTV8",
-    "CCTV9",
-    "CCTV10",
-    "CCTV11",
-    "CCTV12",
-    "CCTV13",
-    "CCTV14",
-    "CCTV15",
-    "CCTV16",
-    "CCTV17"
+    "CCTV5+"
   ]
 };
 
@@ -142,7 +70,10 @@ const urlSet = new Set();
 const MAX_CHECK = 3000;
 
 const sources = fs
-  .readFileSync("./api/sources.txt", "utf-8")
+  .readFileSync(
+    "./api/sources.txt",
+    "utf-8"
+  )
   .split("\n")
   .map(i => i.trim())
   .filter(Boolean);
@@ -270,6 +201,20 @@ async function loadUrl(url) {
 
 async function checkStream(url) {
 
+  /* 非 HTTP 协议直接放行 */
+
+  if (
+    url.startsWith("p3p") ||
+    url.startsWith("rtmp") ||
+    url.startsWith("rtsp")
+  ) {
+
+    return {
+      ok: true,
+      speed: 1
+    };
+  }
+
   const start =
     Date.now();
 
@@ -316,7 +261,11 @@ function addChannel(
 ) {
 
   if (
-    !url.startsWith("http")
+    !url.startsWith("http") &&
+    !url.startsWith("https") &&
+    !url.startsWith("p3p") &&
+    !url.startsWith("rtmp") &&
+    !url.startsWith("rtsp")
   ) {
     return;
   }
@@ -659,8 +608,6 @@ async function run() {
 
     await parse(text);
   }
-
-  /* 自定义源 */
 
   loadCustomSources();
 
