@@ -1,101 +1,107 @@
 #EXTM3U
 
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://192.151.150.154/live/cctv17hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://192.151.150.154/live/cctv13hd.m3u8
+http://192.151.150.154/live/cctv10hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://192.151.150.154/live/cctv16hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
+http://192.151.150.154/live/cctv17hd.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
 http://192.151.150.154/live/cctv1hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://192.151.150.154/live/cctv11hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://192.151.150.154/live/cctv12hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://192.151.150.154/live/cctv10hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://192.151.150.154/live/cctv15hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
+http://192.151.150.154/live/cctv13hd.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://192.151.150.154/live/cctv12hd.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
 http://192.151.150.154/live/cctv14hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv1
-#EXTINF:-1 group-title="央视频道",CCTV1
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv10
-#EXTINF:-1 group-title="央视频道",CCTV1
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv11
-#EXTINF:-1 group-title="央视频道",CCTV1
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv15
-#EXTINF:-1 group-title="央视频道",CCTV1
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv14
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.77.202.8:49155/673168256
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.77.202.8:49155/624878440
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.77.202.8:49155/667987558
+http://192.151.150.154/live/cctv11hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://124.77.202.8:49155/673168223
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://124.223.82.228:89/608807420
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://207.56.13.146:81/cdnlive/cctv16.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.77.202.8:49155/624878405
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://207.56.13.146:81/cdnlive/cctv13.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.223.82.228:89/667987558
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.77.202.8:49155/673168185
+http://124.77.202.8:49155/624878440
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://124.77.202.8:49155/608807420
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://124.223.82.228:89/624878440
+http://124.77.202.8:49155/624878405
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://124.223.82.228:89/673168223
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv10
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://207.56.13.146:81/cdnlive/cctv1.m3u8
+http://124.77.202.8:49155/608807423
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://207.56.13.146:81/cdnlive/cctv12.m3u8
+http://124.77.202.8:49155/673168256
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.77.202.8:49155/667987558
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.77.202.8:49155/673168185
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://207.56.13.146:81/cdnlive/cctv16.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://124.223.82.228:89/608807423
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://124.223.82.228:89/624878405
-#EXTINF:-1 group-title="央视频道",CCTV1
 http://124.223.82.228:89/673168256
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://124.223.82.228:89/673168185
 #EXTINF:-1 group-title="央视频道",CCTV1
 https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv12
 #EXTINF:-1 group-title="央视频道",CCTV1
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv17
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv1
+#EXTINF:-1 group-title="央视频道",CCTV1
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv11
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://207.56.13.146:81/cdnlive/cctv12.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.223.82.228:89/624878405
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.223.82.228:89/673168185
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.223.82.228:89/608807420
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.223.82.228:89/624878440
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.223.82.228:89/667987558
 #EXTINF:-1 group-title="央视频道",CCTV1
 https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv16
 #EXTINF:-1 group-title="央视频道",CCTV1
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv14
+#EXTINF:-1 group-title="央视频道",CCTV1
 https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv13
+#EXTINF:-1 group-title="央视频道",CCTV1
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv17
+#EXTINF:-1 group-title="央视频道",CCTV1
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv15
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://124.223.82.228:89/673168223
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://207.56.13.146:81/cdnlive/cctv10.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
+http://207.56.13.146:81/cdnlive/cctv1.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://207.56.13.146:81/cdnlive/cctv13.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://207.56.13.146:81/cdnlive/cctv11.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
+http://207.56.13.146:81/cdnlive/cctv15.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV1
 http://207.56.13.146:81/cdnlive/cctv17.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV1
-http://124.77.202.8:49155/608807423
+http://207.56.13.146:81/cdnlive/cctv14.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV2
 http://192.151.150.154/live/cctv2hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV2
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv2
 #EXTINF:-1 group-title="央视频道",CCTV2
 http://124.77.202.8:49155/631780532
 #EXTINF:-1 group-title="央视频道",CCTV2
 http://124.223.82.228:89/631780532
 #EXTINF:-1 group-title="央视频道",CCTV2
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv2
+#EXTINF:-1 group-title="央视频道",CCTV2
 http://207.56.13.146:81/cdnlive/cctv2.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV3
 http://192.151.150.154/live/cctv3hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV3
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv3
-#EXTINF:-1 group-title="央视频道",CCTV3
 http://124.77.202.8:49155/624878271
+#EXTINF:-1 group-title="央视频道",CCTV3
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv3
 #EXTINF:-1 group-title="央视频道",CCTV3
 http://124.223.82.228:89/624878271
 #EXTINF:-1 group-title="央视频道",CCTV3
@@ -103,549 +109,579 @@ http://207.56.13.146:81/cdnlive/cctv3.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV4
 http://192.151.150.154/live/cctv4hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV4
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv4
-#EXTINF:-1 group-title="央视频道",CCTV4
 http://124.77.202.8:49155/631780421
 #EXTINF:-1 group-title="央视频道",CCTV4
+http://124.77.202.8:49155/608807416
+#EXTINF:-1 group-title="央视频道",CCTV4
 http://124.77.202.8:49155/608807419
+#EXTINF:-1 group-title="央视频道",CCTV4
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv4
+#EXTINF:-1 group-title="央视频道",CCTV4
+http://124.223.82.228:89/608807416
 #EXTINF:-1 group-title="央视频道",CCTV4
 http://124.223.82.228:89/631780421
 #EXTINF:-1 group-title="央视频道",CCTV4
 http://124.223.82.228:89/608807419
 #EXTINF:-1 group-title="央视频道",CCTV4
-http://124.223.82.228:89/608807416
-#EXTINF:-1 group-title="央视频道",CCTV4
 http://207.56.13.146:81/cdnlive/cctv4.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV4
-http://124.77.202.8:49155/608807416
-#EXTINF:-1 group-title="央视频道",CCTV5
-http://192.151.150.154/live/cctv5p.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV5
 http://192.151.150.154/live/cctv5hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV5
+http://192.151.150.154/live/cctv5p.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV5
 http://223.112.114.228:50080/newlive/live/hls/180/live.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV5
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv5p
-#EXTINF:-1 group-title="央视频道",CCTV5
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv5
 #EXTINF:-1 group-title="央视频道",CCTV5
 http://124.77.202.8:49155/641886773
 #EXTINF:-1 group-title="央视频道",CCTV5
 http://124.77.202.8:49155/641886683
 #EXTINF:-1 group-title="央视频道",CCTV5
-http://124.223.82.228:89/641886683
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv5p
 #EXTINF:-1 group-title="央视频道",CCTV5
-http://207.56.13.146:81/cdnlive/cctv5p.m3u8
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv5
 #EXTINF:-1 group-title="央视频道",CCTV5
 http://124.223.82.228:89/641886773
 #EXTINF:-1 group-title="央视频道",CCTV5
+http://124.223.82.228:89/641886683
+#EXTINF:-1 group-title="央视频道",CCTV5
 http://207.56.13.146:81/cdnlive/cctv5.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV6
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv6
+#EXTINF:-1 group-title="央视频道",CCTV5
+http://207.56.13.146:81/cdnlive/cctv5p.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV6电影
 http://124.77.202.8:49155/624878396
 #EXTINF:-1 group-title="央视频道",CCTV6
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv6
+#EXTINF:-1 group-title="央视频道",CCTV6
 http://124.223.82.228:89/624878396
-#EXTINF:-1 group-title="央视频道",CCTV7
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv7
 #EXTINF:-1 group-title="央视频道",CCTV7国防军事
 http://124.77.202.8:49155/673168121
 #EXTINF:-1 group-title="央视频道",CCTV7
 http://124.223.82.228:89/673168121
-#EXTINF:-1 group-title="央视频道",CCTV8
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv8
+#EXTINF:-1 group-title="央视频道",CCTV7
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv7
 #EXTINF:-1 group-title="央视频道",CCTV8电视剧
 http://124.77.202.8:49155/624878356
 #EXTINF:-1 group-title="央视频道",CCTV8
 http://124.223.82.228:89/624878356
-#EXTINF:-1 group-title="央视频道",CCTV9
-https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv9
+#EXTINF:-1 group-title="央视频道",CCTV8
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv8
 #EXTINF:-1 group-title="央视频道",CCTV9纪录
 http://124.77.202.8:49155/673168140
 #EXTINF:-1 group-title="央视频道",CCTV9
+https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv9
+#EXTINF:-1 group-title="央视频道",CCTV9
 http://124.223.82.228:89/673168140
-#EXTINF:-1 group-title="央视频道",CCTV-超
-http://192.151.150.154/live/cctv4k.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-卫生健康
-http://192.151.150.154/live/wsjk.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-8K超
-http://192.151.150.154/live/cctv8k.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-高尔夫网球
-http://192.151.150.154/live/gefwq.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-央视文化精品
-http://192.151.150.154/live/ysjp.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-第一剧场
-http://192.151.150.154/live/dyjc.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-6
 http://192.151.150.154/live/cctv6hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-7
-http://192.151.150.154/live/cctv7hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-风云剧场
-http://192.151.150.154/live/fyjc.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-9
-http://192.151.150.154/live/cctv9hd.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-怀旧剧场
-http://192.151.150.154/live/hjjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-央视文化精品
+http://192.151.150.154/live/ysjp.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-央视台球
 http://192.151.150.154/live/ystq.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-世界地理
-http://192.151.150.154/live/sjdl.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-8
-http://192.151.150.154/live/cctv8hd.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-超
+http://192.151.150.154/live/cctv4k.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-8K超
+http://192.151.150.154/live/cctv8k.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-电视指南
 http://192.151.150.154/live/dszn.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-央视文化精品
-http://207.56.13.146:81/cdnlive/ysjp.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-高尔夫网球
-http://207.56.13.146:81/cdnlive/gefwq.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-8电视剧
-http://207.56.13.146:81/cdnlive/cctv8.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-卫生健康
-http://207.56.13.146:81/cdnlive/wsjk.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV风云足球
-http://111.61.236.247:9081/hls/58/index.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-第一剧场
-http://207.56.13.146:81/cdnlive/dyjc.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-风云音乐
-http://207.56.13.146:81/cdnlive/fyyy.m3u8
+http://192.151.150.154/live/dyjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-7
+http://192.151.150.154/live/cctv7hd.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-卫生健康
+http://192.151.150.154/live/wsjk.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-世界地理
-http://207.56.13.146:81/cdnlive/sjdl.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-央视台球
-http://207.56.13.146:81/cdnlive/ystq.m3u8
+http://192.151.150.154/live/sjdl.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-高尔夫网球
+http://192.151.150.154/live/gefwq.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-怀旧剧场
-http://207.56.13.146:81/cdnlive/hjjc.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-风云足球
-http://207.56.13.146:81/cdnlive/fyzq.m3u8
+http://192.151.150.154/live/hjjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-风云剧场
+http://192.151.150.154/live/fyjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-8
+http://192.151.150.154/live/cctv8hd.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-6电影
 http://207.56.13.146:81/cdnlive/cctv6.m3u8
-#EXTINF:-1 group-title="央视频道",CCTV-兵器科技
-http://207.56.13.146:81/cdnlive/gfjs.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-8电视剧
+http://207.56.13.146:81/cdnlive/cctv8.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-怀旧剧场
+http://207.56.13.146:81/cdnlive/hjjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-第一剧场
+http://207.56.13.146:81/cdnlive/dyjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-高尔夫网球
+http://207.56.13.146:81/cdnlive/gefwq.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-央视台球
+http://207.56.13.146:81/cdnlive/ystq.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-9纪录
+http://207.56.13.146:81/cdnlive/cctv9.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-世界地理
+http://207.56.13.146:81/cdnlive/sjdl.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-风云剧场
+http://207.56.13.146:81/cdnlive/fyjc.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-风云足球
+http://207.56.13.146:81/cdnlive/fyzq.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-风云音乐
+http://207.56.13.146:81/cdnlive/fyyy.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV-7国防军事
 http://207.56.13.146:81/cdnlive/cctv7.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-女性时尚
+http://207.56.13.146:81/cdnlive/nxss.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-卫生健康
+http://207.56.13.146:81/cdnlive/wsjk.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-央视文化精品
+http://207.56.13.146:81/cdnlive/ysjp.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV-兵器科技
+http://207.56.13.146:81/cdnlive/gfjs.m3u8
+#EXTINF:-1 group-title="央视频道",CCTV风云足球
+http://111.61.236.247:9081/hls/58/index.m3u8
 #EXTINF:-1 group-title="央视频道",CCTV风云足球
 https://epg.pw/stream/ac8062ec9484078061d3bef507c15a423ac57ae4144e3fcc4b0a198dd420f911.m3u8
 
-#EXTINF:-1 group-title="其他频道",🇦🇫阿富汗5AABTV
-http://158.69.124.9:1935/5aabtv/5aabtv/chunklist_w2029417072.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 group-title="其他频道",🇺🇸美国BOOMERANG
 http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8
-#EXTINF:-1 group-title="其他频道",🇱🇰斯里兰卡MonTamilTV
-http://198.144.149.206:8080/MONTAMIL_CINEMA/index.m3u8?token=GTR
 #EXTINF:-1 group-title="其他频道",WETV
 http://23.237.104.106:8080/USA_WE_TV/mpegts
 #EXTINF:-1 group-title="其他频道",E!
 http://23.237.104.106:8080/USA_E/index.m3u8
 #EXTINF:-1 group-title="其他频道",fuse
 http://23.237.104.106:8080/USA_FUSE/index.m3u8
+#EXTINF:-1 group-title="其他频道",ComedyCentral
+http://23.237.104.106:8080/USA_COMEDY_CENTRAL/index.m3u8
 #EXTINF:-1 group-title="其他频道",MTV
 http://23.237.104.106:8080/USA_MTV/index.m3u8
 #EXTINF:-1 group-title="其他频道",AXSTV
 http://23.239.31.26:8989/axstv/index.m3u8
 #EXTINF:-1 group-title="其他频道",A&E
 http://23.239.31.26:8989/aande/index.m3u8
-#EXTINF:-1 group-title="其他频道",ESPN2
-http://46.151.196.223:14438/
-#EXTINF:-1 group-title="其他频道",ESPN3
-http://46.151.196.223:14444/
-#EXTINF:-1 group-title="其他频道",ESPN4
-http://46.151.196.223:14450/
-#EXTINF:-1 group-title="其他频道",ESPN1
-http://46.151.196.223:14432/
-#EXTINF:-1 group-title="其他频道",Cinemax
-http://23.237.104.106:8080/USA_CINEMAX/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="其他频道",CN卡通
-http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="其他频道",HBO喜剧
-http://23.237.104.106:8080/USA_HBO_COMEDY/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="其他频道",🇱🇰斯里兰卡MonTamilTV
+http://198.144.149.206:8080/MONTAMIL_CINEMA/index.m3u8?token=GTR
 #EXTINF:-1 group-title="其他频道",Cinemax精选
 http://23.237.104.106:8080/USA_MOREMAX/mono.m3u8
-#EXTINF:-1 group-title="其他频道",Cinemax经典
-http://23.237.104.106:8080/USA_5STARMAX/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="其他频道",HBO
 http://23.237.104.106:8080/USA_HBO/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="其他频道",USANetwork
-http://190.11.225.124:5000/live/usa_hd/playlist.m3u8
+#EXTINF:-1 group-title="其他频道",Cinemax
+http://23.237.104.106:8080/USA_CINEMAX/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="其他频道",🇦🇫阿富汗5AABTV
+http://158.69.124.9:1935/5aabtv/5aabtv/chunklist_w2029417072.m3u8?checkedby:iptvcat.com
 #EXTINF:-1 group-title="其他频道",HBO王牌
 http://23.237.104.106:8080/USA_HBO_ZONE/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="其他频道",HBO精选
-http://23.237.104.106:8080/USA_HBO2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="其他频道",Cinemax经典
+http://23.237.104.106:8080/USA_5STARMAX/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="其他频道",LMN
 http://23.237.104.106:8080/USA_LMN/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="其他频道",中视菁采
-http://74.91.26.218:82/live/ctvjc.m3u8
+#EXTINF:-1 group-title="其他频道",ESPN4
+http://46.151.196.223:14450/
+#EXTINF:-1 group-title="其他频道",ESPN3
+http://46.151.196.223:14444/
+#EXTINF:-1 group-title="其他频道",邵氏动作
+http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",CHC动作电影
+http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",HBO喜剧
+http://23.237.104.106:8080/USA_HBO_COMEDY/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="其他频道",ESPN1
+http://46.151.196.223:14432/
+#EXTINF:-1 group-title="其他频道",邵氏喜剧
+http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",CHC家庭影院
+http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",HBO精选
+http://23.237.104.106:8080/USA_HBO2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="其他频道",ESPN2
+http://46.151.196.223:14438/
+#EXTINF:-1 group-title="其他频道",邵氏武侠
+http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",邵氏电影
+http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",CHC影迷电影
+http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 #EXTINF:-1 group-title="其他频道",中视经典
 http://74.91.26.218:82/live/ctvjd.m3u8
+#EXTINF:-1 group-title="其他频道",CN卡通
+http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="其他频道",中视菁采
+http://74.91.26.218:82/live/ctvjc.m3u8
 #EXTINF:-1 group-title="其他频道",中视新闻
 http://74.91.26.218:82/live/ctvnews.m3u8
-#EXTINF:-1 group-title="其他频道",民视新闻
-http://74.91.26.218:82/live/ftvnews.m3u8
+#EXTINF:-1 group-title="其他频道",台视财经
+http://74.91.26.218:82/live/ttvcj.m3u8
 #EXTINF:-1 group-title="其他频道",民视第一台
 http://74.91.26.218:82/live/ftvdy.m3u8
+#EXTINF:-1 group-title="其他频道",民视新闻
+http://74.91.26.218:82/live/ftvnews.m3u8
 #EXTINF:-1 group-title="其他频道",台视新闻
 http://74.91.26.218:82/live/ttvnews.m3u8
-#EXTINF:-1 group-title="其他频道",华视新闻
-http://74.91.26.218:82/live/ctsnews.m3u8
-#EXTINF:-1 group-title="其他频道",民视台湾台
-http://74.91.26.218:82/live/ftvtw.m3u8
-#EXTINF:-1 group-title="其他频道",公视台语台
-http://74.91.26.218:82/live/ptsty.m3u8
 #EXTINF:-1 group-title="其他频道",华视教育体育文化
 http://74.91.26.218:82/live/ctsjy.m3u8
-#EXTINF:-1 group-title="其他频道",中国教育3
-http://192.151.150.154/live/cetv3.m3u8
+#EXTINF:-1 group-title="其他频道",华视新闻
+http://74.91.26.218:82/live/ctsnews.m3u8
+#EXTINF:-1 group-title="其他频道",公视台语台
+http://74.91.26.218:82/live/ptsty.m3u8
 #EXTINF:-1 group-title="其他频道",中央新影-发现之旅
 http://192.151.150.154/live/fxzl.m3u8
-#EXTINF:-1 group-title="其他频道",中央新影-老故事
-http://192.151.150.154/live/lgs.m3u8
-#EXTINF:-1 group-title="其他频道",广东少儿
-http://192.151.150.154/live/gdtvs5.m3u8
-#EXTINF:-1 group-title="其他频道",广东超
-http://192.151.150.154/live/gdtvs3.m3u8
+#EXTINF:-1 group-title="其他频道",USANetwork
+http://190.11.225.124:5000/live/usa_hd/playlist.m3u8
 #EXTINF:-1 group-title="其他频道",岭南戏曲
 http://192.151.150.154/live/gdlnxq.m3u8
-#EXTINF:-1 group-title="其他频道",CHC影迷电影
-http://192.151.150.154/live/chchd.m3u8
-#EXTINF:-1 group-title="其他频道",CHC动作电影
-http://192.151.150.154/live/chcdz.m3u8
-#EXTINF:-1 group-title="其他频道",国学频道
-http://192.151.150.154/live/gxpd.m3u8
 #EXTINF:-1 group-title="其他频道",CHC家庭影院
 http://192.151.150.154/live/chcjt.m3u8
 #EXTINF:-1 group-title="其他频道",天元围棋
 http://192.151.150.154/live/gztywq.m3u8
-#EXTINF:-1 group-title="其他频道",ESPN2🇨🇴
-http://200.10.30.241:8000/play/a01r/index.m3u8
+#EXTINF:-1 group-title="其他频道",广东超
+http://192.151.150.154/live/gdtvs3.m3u8
+#EXTINF:-1 group-title="其他频道",国学频道
+http://192.151.150.154/live/gxpd.m3u8
+#EXTINF:-1 group-title="其他频道",中央新影-老故事
+http://192.151.150.154/live/lgs.m3u8
+#EXTINF:-1 group-title="其他频道",中国教育3
+http://192.151.150.154/live/cetv3.m3u8
 #EXTINF:-1 group-title="其他频道",CHC动作电影
-http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
-#EXTINF:-1 group-title="其他频道",邵氏喜剧
-http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub
-#EXTINF:-1 group-title="其他频道",邵氏武侠
-http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
-#EXTINF:-1 group-title="其他频道",CHC家庭影院
-http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
+http://192.151.150.154/live/chcdz.m3u8
 #EXTINF:-1 group-title="其他频道",CHC影迷电影
-http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
-#EXTINF:-1 group-title="其他频道",邵氏动作
-http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub
-#EXTINF:-1 group-title="其他频道",邵氏电影
-http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
-#EXTINF:-1 group-title="其他频道",MAXSPORT3🇧🇬
-http://77.46.130.252:99/maxsport3
+http://192.151.150.154/live/chchd.m3u8
 #EXTINF:-1 group-title="其他频道",🇰🇷韩国MBC
 http://211.33.246.4:32954/cj_live/myStream.sdp/chunklist_w517347500.m3u8
+#EXTINF:-1 group-title="其他频道",ESPN2🇨🇴
+http://200.10.30.241:8000/play/a01r/index.m3u8
 #EXTINF:-1 group-title="其他频道",JTV
 http://61.85.197.53:1935/jtv_live/myStream/chunklist_w1542137203.m3u8
-#EXTINF:-1 group-title="其他频道",TurkmenistanSport🇹🇲
-http://217.174.225.146/hls/ch004_720/index.m3u8
 #EXTINF:-1 group-title="其他频道",SBSJTV
 http://61.85.197.53:1935/jtv_live/myStream/playlist.m3u8
 #EXTINF:-1 group-title="其他频道",百姓调解
 http://39.165.39.49:85/tsfile/live/1124_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 group-title="其他频道",武术世界
-http://124.77.202.8:49155/958475359
-#EXTINF:-1 group-title="其他频道",辽宁广播电视台体育休闲频道
-http://124.77.202.8:49155/962067526
 #EXTINF:-1 group-title="其他频道",发现之旅
 http://124.77.202.8:49155/624878970
-#EXTINF:-1 group-title="其他频道",老故事
-http://124.77.202.8:49155/884121956
-#EXTINF:-1 group-title="其他频道",CGTN
-http://124.77.202.8:49155/609017205
-#EXTINF:-1 group-title="其他频道",CGTN外语纪录
-http://124.77.202.8:49155/609006487
-#EXTINF:-1 group-title="其他频道",陕西体育休闲频道
-http://124.77.202.8:49155/956909356
-#EXTINF:-1 group-title="其他频道",CGTN法语
-http://124.77.202.8:49155/609006476
-#EXTINF:-1 group-title="其他频道",赛事最经典
-http://124.77.202.8:49155/646596895
-#EXTINF:-1 group-title="其他频道",黄河
-http://113.26.251.182:8009/hls/24/index.m3u8
-#EXTINF:-1 group-title="其他频道",经典香港电影
-http://124.223.82.228:89/625703337
 #EXTINF:-1 group-title="其他频道",CGTN阿拉伯语
 http://124.77.202.8:49155/609154345
 #EXTINF:-1 group-title="其他频道",四海钓鱼
 http://124.77.202.8:49155/637444975
 #EXTINF:-1 group-title="其他频道",快乐垂钓
 http://124.77.202.8:49155/961930263
-#EXTINF:-1 group-title="其他频道",推流影院
-http://222.186.39.38:8000/587078/index.m3u8
+#EXTINF:-1 group-title="其他频道",CGTN
+http://124.77.202.8:49155/609017205
+#EXTINF:-1 group-title="其他频道",辽宁广播电视台体育休闲频道
+http://124.77.202.8:49155/962067526
+#EXTINF:-1 group-title="其他频道",CGTN法语
+http://124.77.202.8:49155/609006476
 #EXTINF:-1 group-title="其他频道",中学生
 http://124.77.202.8:49155/708869532
-#EXTINF:-1 group-title="其他频道",辽宁生活频道
-http://124.223.82.228:89/962045226
+#EXTINF:-1 group-title="其他频道",MAXSPORT3🇧🇬
+http://77.46.130.252:99/maxsport3
+#EXTINF:-1 group-title="其他频道",广东体育
+http://111.221.137.234:44330/tsfile/live/0124_1.m3u8
+#EXTINF:-1 group-title="其他频道",老故事
+http://124.77.202.8:49155/884121956
+#EXTINF:-1 group-title="其他频道",陕西体育休闲频道
+http://124.77.202.8:49155/956909356
+#EXTINF:-1 group-title="其他频道",CGTN外语纪录
+http://124.77.202.8:49155/609006487
+#EXTINF:-1 group-title="其他频道",陕西都市青春频道
+http://124.223.82.228:89/956909358
+#EXTINF:-1 group-title="其他频道",赛事最经典
+http://124.77.202.8:49155/646596895
 #EXTINF:-1 group-title="其他频道",CGTN俄语
 http://124.77.202.8:49155/609006446
 #EXTINF:-1 group-title="其他频道",CGTN西班牙语
 http://124.77.202.8:49155/609006450
 #EXTINF:-1 group-title="其他频道",体坛名栏汇
 http://124.77.202.8:49155/629943305
-#EXTINF:-1 group-title="其他频道",抗战经典影片
-http://124.223.82.228:89/617432318
-#EXTINF:-1 group-title="其他频道",财富天下
-http://124.223.82.228:89/956923159
-#EXTINF:-1 group-title="其他频道",宁夏文旅频道
-http://124.223.82.228:89/962067523
+#EXTINF:-1 group-title="其他频道",武术世界
+http://124.77.202.8:49155/958475359
 #EXTINF:-1 group-title="其他频道",辽宁体育
 http://124.223.82.228:89/962067526
-#EXTINF:-1 group-title="其他频道",CHC家庭影院
-http://124.223.82.228:89/644368373
-#EXTINF:-1 group-title="其他频道",陕西新闻资讯频道
-http://124.223.82.228:89/956909289
-#EXTINF:-1 group-title="其他频道",金鹰卡通
-http://183.237.95.108:9901/tsfile/live/1099_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 group-title="其他频道",华数动作影院
-http://113.25.252.226:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="其他频道",南通新闻综合
-http://124.223.82.228:89/955227985
-#EXTINF:-1 group-title="其他频道",江阴新闻综合
-http://124.223.82.228:89/955227979
-#EXTINF:-1 group-title="其他频道",动漫秀场
-http://183.237.95.108:9901/tsfile/live/1104_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 group-title="其他频道",上视东方影视
-http://124.223.82.228:89/617290047
-#EXTINF:-1 group-title="其他频道",陕西体育
-http://124.223.82.228:89/956909356
-#EXTINF:-1 group-title="其他频道",陕西都市青春频道
-http://124.223.82.228:89/956909358
-#EXTINF:-1 group-title="其他频道",宁夏经济频道
-http://124.223.82.228:89/962067520
-#EXTINF:-1 group-title="其他频道",最强综艺趴
-http://124.223.82.228:89/629942228
-#EXTINF:-1 group-title="其他频道",赛事最经典
-http://124.223.82.228:89/646596895
-#EXTINF:-1 group-title="其他频道",公共新闻频道
-http://124.223.82.228:89/626064693
-#EXTINF:-1 group-title="其他频道",重庆汽摩
-http://120.76.248.139/live/bfgd/4200000168.m3u8
-#EXTINF:-1 group-title="其他频道",CHC影迷电影
-http://124.223.82.228:89/952383261
-#EXTINF:-1 group-title="其他频道",溧水新闻综合
-http://124.223.82.228:89/639737327
-#EXTINF:-1 group-title="其他频道",CHC动作电影
-http://124.223.82.228:89/644368714
+#EXTINF:-1 group-title="其他频道",黄河
+http://113.26.251.182:8009/hls/24/index.m3u8
 #EXTINF:-1 group-title="其他频道",上海新闻综合
 http://124.223.82.228:89/651632657
-#EXTINF:-1 group-title="其他频道",陕西秦腔频道
-http://124.223.82.228:89/956909303
-#EXTINF:-1 group-title="其他频道",台视财经
-http://74.91.26.218:82/live/ttvcj.m3u8
-#EXTINF:-1 group-title="其他频道",辽宁公共频道
-http://124.223.82.228:89/962045223
-#EXTINF:-1 group-title="其他频道",宜兴新闻综合
-http://124.223.82.228:89/955227996
-#EXTINF:-1 group-title="其他频道",辽宁影视剧频道
-http://124.223.82.228:89/962067517
-#EXTINF:-1 group-title="其他频道",新片放映厅
-http://124.223.82.228:89/619495952
+#EXTINF:-1 group-title="其他频道",推流影院
+http://222.186.39.38:8000/587078/index.m3u8
+#EXTINF:-1 group-title="其他频道",金鹰卡通
+http://183.237.95.108:9901/tsfile/live/1099_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="其他频道",动漫秀场
+http://183.237.95.108:9901/tsfile/live/1104_1.m3u8?key=txiptv&playlive=0&authid=0
+#EXTINF:-1 group-title="其他频道",宁夏文旅频道
+http://124.223.82.228:89/962067523
 #EXTINF:-1 group-title="其他频道",陕西银龄频道
 http://124.223.82.228:89/956909362
+#EXTINF:-1 group-title="其他频道",宜兴新闻综合
+http://124.223.82.228:89/955227996
+#EXTINF:-1 group-title="其他频道",宁夏经济频道
+http://124.223.82.228:89/962067520
+#EXTINF:-1 group-title="其他频道",辽宁公共频道
+http://124.223.82.228:89/962045223
+#EXTINF:-1 group-title="其他频道",最强综艺趴
+http://124.223.82.228:89/629942228
+#EXTINF:-1 group-title="其他频道",南通新闻综合
+http://124.223.82.228:89/955227985
+#EXTINF:-1 group-title="其他频道",经典香港电影
+http://124.223.82.228:89/625703337
 #EXTINF:-1 group-title="其他频道",和美乡途轮播台
 http://124.223.82.228:89/713591450
+#EXTINF:-1 group-title="其他频道",华数动作影院
+http://113.25.252.226:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="其他频道",辽宁生活频道
+http://124.223.82.228:89/962045226
+#EXTINF:-1 group-title="其他频道",TurkmenistanSport🇹🇲
+http://217.174.225.146/hls/ch004_720/index.m3u8
+#EXTINF:-1 group-title="其他频道",财富天下
+http://124.223.82.228:89/956923159
+#EXTINF:-1 group-title="其他频道",溧水新闻综合
+http://124.223.82.228:89/639737327
+#EXTINF:-1 group-title="其他频道",重庆汽摩
+http://120.76.248.139/live/bfgd/4200000168.m3u8
+#EXTINF:-1 group-title="其他频道",公共新闻频道
+http://124.223.82.228:89/626064693
+#EXTINF:-1 group-title="其他频道",辽宁影视剧频道
+http://124.223.82.228:89/962067517
+#EXTINF:-1 group-title="其他频道",CHC家庭影院
+http://124.223.82.228:89/644368373
+#EXTINF:-1 group-title="其他频道",CHC影迷电影
+http://124.223.82.228:89/952383261
+#EXTINF:-1 group-title="其他频道",CHC动作电影
+http://124.223.82.228:89/644368714
+#EXTINF:-1 group-title="其他频道",抗战经典影片
+http://124.223.82.228:89/617432318
 #EXTINF:-1 group-title="其他频道",体坛名栏汇
 http://124.223.82.228:89/629943305
+#EXTINF:-1 group-title="其他频道",民视台湾台
+http://74.91.26.218:82/live/ftvtw.m3u8
+#EXTINF:-1 group-title="其他频道",陕西体育
+http://124.223.82.228:89/956909356
+#EXTINF:-1 group-title="其他频道",陕西新闻资讯频道
+http://124.223.82.228:89/956909289
 #EXTINF:-1 group-title="其他频道",盐城新闻综合
 http://124.223.82.228:89/639731825
+#EXTINF:-1 group-title="其他频道",江阴新闻综合
+http://124.223.82.228:89/955227979
+#EXTINF:-1 group-title="其他频道",上视东方影视
+http://124.223.82.228:89/617290047
+#EXTINF:-1 group-title="其他频道",赛事最经典
+http://124.223.82.228:89/646596895
 #EXTINF:-1 group-title="其他频道",四海钓鱼
 http://124.223.82.228:89/637444975
-#EXTINF:-1 group-title="其他频道",广东体育
-http://111.221.137.234:44330/tsfile/live/0124_1.m3u8
+#EXTINF:-1 group-title="其他频道",陕西秦腔频道
+http://124.223.82.228:89/956909303
+#EXTINF:-1 group-title="其他频道",新片放映厅
+http://124.223.82.228:89/619495952
 #EXTINF:-1 group-title="其他频道",更新时间2026.6.1
 https://k0u3cydy43y9zw2408x8760xfx5xx9z.djvod.ndcimgs.com/upic/2026/03/07/21/BMjAyNjAzMDcyMTIyMzlfNDI0MDI5NTBfMTg5Nzk0ODUxNjg5XzFfMw==_b_Bc33d39ac3524c256f9ddabce4588794b.mp4
 #EXTINF:-1 group-title="其他频道",CEC国际旅游
 http://play.cec-tv.com.cn/channel/cec-tv2.m3u8
-#EXTINF:-1 group-title="其他频道",CEC国际教育
-http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
 #EXTINF:-1 group-title="其他频道",CEC汉语文化
 http://play.cec-tv.com.cn/channel/cec-tv1.m3u8
+#EXTINF:-1 group-title="其他频道",CEC国际教育
+http://play.cec-tv.com.cn/channel/cec-tv3.m3u8
 #EXTINF:-1 group-title="其他频道",CEC国际健康
 http://play.cec-tv.com.cn/channel/cec-tv4.m3u8
+#EXTINF:-1 group-title="其他频道",CGTN法语
+http://zqh2333.top:2222/rtp/239.93.55.50:5140
+#EXTINF:-1 group-title="其他频道",新增球帝直播，蜘蛛直播更换域名
+https://www.iesdouyin.com/aweme/v1/playwm/?video_id=v0200fg10000d0eiu0vog65rvb7pkel0&ratio=720p&line=0
 
 #EXTINF:-1 group-title="卫视频道",陕西卫视
 http://192.151.150.154/live/snwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",黑龙江卫视
-http://192.151.150.154/live/hljwshd.m3u8
 #EXTINF:-1 group-title="卫视频道",河南卫视
 http://192.151.150.154/live/hawshd.m3u8
-#EXTINF:-1 group-title="卫视频道",辽宁卫视
-http://192.151.150.154/live/lnwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",新疆卫视
-http://192.151.150.154/live/xjws.m3u8
-#EXTINF:-1 group-title="卫视频道",江西卫视
-http://192.151.150.154/live/jxwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",宁夏卫视
-http://192.151.150.154/live/nxws.m3u8
 #EXTINF:-1 group-title="卫视频道",山西卫视
 http://192.151.150.154/live/sxwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",宁夏卫视
+http://192.151.150.154/live/nxws.m3u8
+#EXTINF:-1 group-title="卫视频道",厦门卫视
+http://192.151.150.154/live/xmws.m3u8
 #EXTINF:-1 group-title="卫视频道",浙江卫视
 http://192.151.150.154/live/zjwshd.m3u8
 #EXTINF:-1 group-title="卫视频道",内蒙古卫视
 http://192.151.150.154/live/nmgws.m3u8
-#EXTINF:-1 group-title="卫视频道",河北卫视
-http://192.151.150.154/live/hewshd.m3u8
-#EXTINF:-1 group-title="卫视频道",青海卫视
-http://192.151.150.154/live/qhws.m3u8
-#EXTINF:-1 group-title="卫视频道",吉林卫视
-http://192.151.150.154/live/jlwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",云南卫视
-http://192.151.150.154/live/ynwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",湖北卫视
+http://192.151.150.154/live/hbwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",黑龙江卫视
+http://192.151.150.154/live/hljwshd.m3u8
 #EXTINF:-1 group-title="卫视频道",四川卫视
 http://192.151.150.154/live/scwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",河北卫视
+http://192.151.150.154/live/hewshd.m3u8
+#EXTINF:-1 group-title="卫视频道",兵团卫视
+http://192.151.150.154/live/btws.m3u8
 #EXTINF:-1 group-title="卫视频道",三沙卫视
 http://192.151.150.154/live/ssws.m3u8
-#EXTINF:-1 group-title="卫视频道",天津卫视
-http://192.151.150.154/live/tjwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",山东卫视
-http://192.151.150.154/live/sdwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",北京卫视
-http://192.151.150.154/live/bjwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",湖南卫视
-http://192.151.150.154/live/hnwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",广西卫视
-http://192.151.150.154/live/gxwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",重庆卫视
-http://192.151.150.154/live/cqwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",大湾区卫视
-http://192.151.150.154/live/nfws.m3u8
 #EXTINF:-1 group-title="卫视频道",安徽卫视
 http://192.151.150.154/live/ahwshd.m3u8
 #EXTINF:-1 group-title="卫视频道",东方卫视
 http://192.151.150.154/live/dfwshd.m3u8
-#EXTINF:-1 group-title="卫视频道",江苏卫视
-http://192.151.150.154/live/jswshd.m3u8
+#EXTINF:-1 group-title="卫视频道",山东卫视
+http://192.151.150.154/live/sdwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",青海卫视
+http://192.151.150.154/live/qhws.m3u8
 #EXTINF:-1 group-title="卫视频道",甘肃卫视
 http://192.151.150.154/live/gswshd.m3u8
-#EXTINF:-1 group-title="卫视频道",东南卫视
-http://192.151.150.154/live/dnwshd.m3u8
 #EXTINF:-1 group-title="卫视频道",贵州卫视
 http://192.151.150.154/live/gzwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",天津卫视
+http://192.151.150.154/live/tjwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",江西卫视
+http://192.151.150.154/live/jxwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",云南卫视
+http://192.151.150.154/live/ynwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",新疆卫视
+http://192.151.150.154/live/xjws.m3u8
+#EXTINF:-1 group-title="卫视频道",江苏卫视
+http://192.151.150.154/live/jswshd.m3u8
+#EXTINF:-1 group-title="卫视频道",北京卫视
+http://192.151.150.154/live/bjwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",吉林卫视
+http://192.151.150.154/live/jlwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",辽宁卫视
+http://192.151.150.154/live/lnwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",湖南卫视
+http://192.151.150.154/live/hnwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",东南卫视
+http://192.151.150.154/live/dnwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",重庆卫视
+http://192.151.150.154/live/cqwshd.m3u8
+#EXTINF:-1 group-title="卫视频道",大湾区卫视
+http://192.151.150.154/live/nfws.m3u8
+#EXTINF:-1 group-title="卫视频道",广西卫视
+http://192.151.150.154/live/gxwshd.m3u8
 #EXTINF:-1 group-title="卫视频道",海峡卫视
 http://8.138.7.223/tv/hxws.m3u8
-#EXTINF:-1 group-title="卫视频道",兵团卫视
-http://124.77.202.8:49155/956923145
 #EXTINF:-1 group-title="卫视频道",农林卫视
 http://8.138.7.223/%E3%80%90%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E6%A6%B4%E8%8A%92%E7%94%B5%E8%A7%86%E3%80%91/%E5%86%9C%E6%9E%97%E5%8D%AB%E8%A7%86.m3u8
-#EXTINF:-1 group-title="卫视频道",东方卫视
-http://124.77.202.8:49155/651632648
-#EXTINF:-1 group-title="卫视频道",海峡卫视
-http://124.77.202.8:49155/849119120
-#EXTINF:-1 group-title="卫视频道",广东卫视
-http://124.77.202.8:49155/608831231
-#EXTINF:-1 group-title="卫视频道",海南卫视
-http://124.77.202.8:49155/947472502
-#EXTINF:-1 group-title="卫视频道",北京卫视
-http://124.77.202.8:49155/630287636
-#EXTINF:-1 group-title="卫视频道",河南卫视
-http://124.77.202.8:49155/790187291
+#EXTINF:-1 group-title="卫视频道",重庆卫视
+http://124.77.202.8:49155/738910914
+#EXTINF:-1 group-title="卫视频道",江西卫视
+http://124.77.202.8:49155/783847495
 #EXTINF:-1 group-title="卫视频道",陕西卫视
 http://124.77.202.8:49155/738910838
 #EXTINF:-1 group-title="卫视频道",江苏卫视
 http://124.77.202.8:49155/623899368
-#EXTINF:-1 group-title="卫视频道",中国农林卫视
-http://124.77.202.8:49155/956904896
-#EXTINF:-1 group-title="卫视频道",宁夏卫视
-http://124.77.202.8:49155/738910535
-#EXTINF:-1 group-title="卫视频道",河北卫视
-http://124.77.202.8:49155/962042070
-#EXTINF:-1 group-title="卫视频道",重庆卫视
-http://124.77.202.8:49155/738910914
-#EXTINF:-1 group-title="卫视频道",浙江卫视
-http://207.56.13.146:81/cdnlive/zjws.m3u8
-#EXTINF:-1 group-title="卫视频道",大湾区卫视
-http://124.77.202.8:49155/608917627
-#EXTINF:-1 group-title="卫视频道",吉林卫视
-http://124.77.202.8:49155/947472500
-#EXTINF:-1 group-title="卫视频道",湖北卫视
-http://124.77.202.8:49155/947472496
-#EXTINF:-1 group-title="卫视频道",辽宁卫视
-http://124.77.202.8:49155/630291707
-#EXTINF:-1 group-title="卫视频道",安徽卫视
-http://207.56.13.146:81/cdnlive/ahws.m3u8
-#EXTINF:-1 group-title="卫视频道",内蒙古卫视
-http://207.56.13.146:81/cdnlive/nmgws.m3u8
+#EXTINF:-1 group-title="卫视频道",广东卫视
+http://124.77.202.8:49155/608831231
 #EXTINF:-1 group-title="卫视频道",三沙卫视
 http://124.77.202.8:49155/961023778
-#EXTINF:-1 group-title="卫视频道",东南卫视
-http://124.77.202.8:49155/849116810
-#EXTINF:-1 group-title="卫视频道",河北卫视
-http://124.223.82.228:89/962042070
-#EXTINF:-1 group-title="卫视频道",陕西卫视
-http://124.223.82.228:89/738910838
-#EXTINF:-1 group-title="卫视频道",大湾区卫视
-http://124.223.82.228:89/608917627
-#EXTINF:-1 group-title="卫视频道",广东卫视
-http://124.223.82.228:89/608831231
-#EXTINF:-1 group-title="卫视频道",江苏卫视
-http://124.223.82.228:89/623899368
-#EXTINF:-1 group-title="卫视频道",西藏卫视
-http://207.56.13.146:81/cdnlive/xzws.m3u8
+#EXTINF:-1 group-title="卫视频道",吉林卫视
+http://124.77.202.8:49155/947472500
+#EXTINF:-1 group-title="卫视频道",兵团卫视
+http://124.77.202.8:49155/956923145
+#EXTINF:-1 group-title="卫视频道",海峡卫视
+http://124.77.202.8:49155/849119120
+#EXTINF:-1 group-title="卫视频道",河南卫视
+http://124.77.202.8:49155/790187291
+#EXTINF:-1 group-title="卫视频道",青海卫视
+http://124.77.202.8:49155/947472506
 #EXTINF:-1 group-title="卫视频道",农林卫视
 http://124.223.82.228:89/956904896
-#EXTINF:-1 group-title="卫视频道",湖北卫视
-http://124.223.82.228:89/947472496
-#EXTINF:-1 group-title="卫视频道",北京卫视
-http://207.56.13.146:81/cdnlive/bjws.m3u8
-#EXTINF:-1 group-title="卫视频道",江西卫视
-http://207.56.13.146:81/cdnlive/jxws.m3u8
+#EXTINF:-1 group-title="卫视频道",海南卫视
+http://124.77.202.8:49155/947472502
+#EXTINF:-1 group-title="卫视频道",宁夏卫视
+http://124.77.202.8:49155/738910535
+#EXTINF:-1 group-title="卫视频道",大湾区卫视
+http://124.77.202.8:49155/608917627
+#EXTINF:-1 group-title="卫视频道",东南卫视
+http://124.77.202.8:49155/849116810
 #EXTINF:-1 group-title="卫视频道",东方卫视
-http://207.56.13.146:81/cdnlive/dfws.m3u8
+http://124.77.202.8:49155/651632648
+#EXTINF:-1 group-title="卫视频道",中国农林卫视
+http://124.77.202.8:49155/956904896
+#EXTINF:-1 group-title="卫视频道",北京卫视
+http://124.77.202.8:49155/630287636
+#EXTINF:-1 group-title="卫视频道",辽宁卫视
+http://124.77.202.8:49155/630291707
+#EXTINF:-1 group-title="卫视频道",湖北卫视
+http://124.77.202.8:49155/947472496
+#EXTINF:-1 group-title="卫视频道",江苏卫视
+http://124.223.82.228:89/623899368
+#EXTINF:-1 group-title="卫视频道",兵团卫视
+http://124.223.82.228:89/956923145
+#EXTINF:-1 group-title="卫视频道",河北卫视
+http://124.77.202.8:49155/962042070
 #EXTINF:-1 group-title="卫视频道",北京卫视
 http://124.223.82.228:89/630287636
+#EXTINF:-1 group-title="卫视频道",深圳卫视
+http://207.56.13.146:81/cdnlive/szws.m3u8
+#EXTINF:-1 group-title="卫视频道",陕西卫视
+http://124.223.82.228:89/738910838
+#EXTINF:-1 group-title="卫视频道",河北卫视
+http://124.223.82.228:89/962042070
+#EXTINF:-1 group-title="卫视频道",辽宁卫视
+http://124.223.82.228:89/630291707
+#EXTINF:-1 group-title="卫视频道",广东卫视
+http://124.223.82.228:89/608831231
+#EXTINF:-1 group-title="卫视频道",东方卫视
+http://124.223.82.228:89/651632648
+#EXTINF:-1 group-title="卫视频道",大湾区卫视
+http://124.223.82.228:89/608917627
+#EXTINF:-1 group-title="卫视频道",湖北卫视
+http://124.223.82.228:89/947472496
+#EXTINF:-1 group-title="卫视频道",江西卫视
+http://124.223.82.228:89/783847495
+#EXTINF:-1 group-title="卫视频道",天津卫视
+http://207.56.13.146:81/cdnlive/tjws.m3u8
+#EXTINF:-1 group-title="卫视频道",内蒙古卫视
+http://207.56.13.146:81/cdnlive/nmgws.m3u8
+#EXTINF:-1 group-title="卫视频道",安徽卫视
+http://207.56.13.146:81/cdnlive/ahws.m3u8
+#EXTINF:-1 group-title="卫视频道",江苏卫视
+http://207.56.13.146:81/cdnlive/jsws.m3u8
+#EXTINF:-1 group-title="卫视频道",浙江卫视
+http://207.56.13.146:81/cdnlive/zjws.m3u8
+#EXTINF:-1 group-title="卫视频道",东南卫视
+http://207.56.13.146:81/cdnlive/dnws.m3u8
+#EXTINF:-1 group-title="卫视频道",吉林卫视
+http://207.56.13.146:81/cdnlive/jlws.m3u8
+#EXTINF:-1 group-title="卫视频道",山东卫视
+http://207.56.13.146:81/cdnlive/sdws.m3u8
 #EXTINF:-1 group-title="卫视频道",湖南卫视
 http://207.56.13.146:81/cdnlive/hnws.m3u8
 #EXTINF:-1 group-title="卫视频道",广东卫视
 http://207.56.13.146:81/cdnlive/gdws.m3u8
-#EXTINF:-1 group-title="卫视频道",江西卫视
-http://124.223.82.228:89/783847495
 #EXTINF:-1 group-title="卫视频道",东方卫视
-http://124.223.82.228:89/651632648
-#EXTINF:-1 group-title="卫视频道",辽宁卫视
-http://124.223.82.228:89/630291707
+http://207.56.13.146:81/cdnlive/dfws.m3u8
+#EXTINF:-1 group-title="卫视频道",江西卫视
+http://207.56.13.146:81/cdnlive/jxws.m3u8
+#EXTINF:-1 group-title="卫视频道",西藏卫视
+http://207.56.13.146:81/cdnlive/xzws.m3u8
 #EXTINF:-1 group-title="卫视频道",新疆卫视
 http://207.56.13.146:81/cdnlive/xjws.m3u8
-#EXTINF:-1 group-title="卫视频道",东南卫视
-http://207.56.13.146:81/cdnlive/dnws.m3u8
-#EXTINF:-1 group-title="卫视频道",深圳卫视
-http://207.56.13.146:81/cdnlive/szws.m3u8
-#EXTINF:-1 group-title="卫视频道",海南卫视
-http://207.56.13.146:81/cdnlive/lyws.m3u8
-#EXTINF:-1 group-title="卫视频道",江苏卫视
-http://207.56.13.146:81/cdnlive/jsws.m3u8
-#EXTINF:-1 group-title="卫视频道",山东卫视
-http://207.56.13.146:81/cdnlive/sdws.m3u8
-#EXTINF:-1 group-title="卫视频道",江西卫视
-http://124.77.202.8:49155/783847495
-#EXTINF:-1 group-title="卫视频道",兵团卫视
-http://124.223.82.228:89/956923145
+#EXTINF:-1 group-title="卫视频道",云南卫视
+http://207.56.13.146:81/cdnlive/ynws.m3u8
 #EXTINF:-1 group-title="卫视频道",辽宁卫视
 http://207.56.13.146:81/cdnlive/lnws.m3u8
-#EXTINF:-1 group-title="卫视频道",青海卫视
-http://124.77.202.8:49155/947472506
-#EXTINF:-1 group-title="卫视频道",东方卫视
-http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 group-title="卫视频道",山西卫视
 http://207.56.13.146:81/cdnlive/sxws.m3u8
-#EXTINF:-1 group-title="卫视频道",四川卫视
-http://207.56.13.146:81/cdnlive/scws.m3u8
-#EXTINF:-1 group-title="卫视频道",广西卫视
-http://207.56.13.146:81/cdnlive/gxws.m3u8
-#EXTINF:-1 group-title="卫视频道",河南卫视
-http://207.56.13.146:81/cdnlive/haws.m3u8
-#EXTINF:-1 group-title="卫视频道",吉林卫视
-http://207.56.13.146:81/cdnlive/jlws.m3u8
-#EXTINF:-1 group-title="卫视频道",河北卫视
-http://207.56.13.146:81/cdnlive/hews.m3u8
-#EXTINF:-1 group-title="卫视频道",贵州卫视
-http://207.56.13.146:81/cdnlive/gzws.m3u8
-#EXTINF:-1 group-title="卫视频道",重庆卫视
-http://207.56.13.146:81/cdnlive/cqws.m3u8
-#EXTINF:-1 group-title="卫视频道",湖北卫视
-http://207.56.13.146:81/cdnlive/hbws.m3u8
 #EXTINF:-1 group-title="卫视频道",湖南卫视
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 group-title="卫视频道",北京卫视
+http://207.56.13.146:81/cdnlive/bjws.m3u8
+#EXTINF:-1 group-title="卫视频道",东方卫视
+http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
+#EXTINF:-1 group-title="卫视频道",浙江卫视
+http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8#http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8?#http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 group-title="卫视频道",浙江卫视
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 group-title="卫视频道",浙江卫视
+http://ali-m-l.cztv.com:80/channels/lantian/channel001/1080p.m3u8$2甘电FD直
+#EXTINF:-1 group-title="卫视频道",浙江卫视
+http://ali-m-l.cztv.com/channels/lantian/channel001/720p.m3u8$1甘电HD直
+#EXTINF:-1 group-title="卫视频道",陕西卫视
+http://207.56.13.146:81/cdnlive/snws.m3u8
+#EXTINF:-1 group-title="卫视频道",浙江卫视
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8$3甘电FD直
+#EXTINF:-1 group-title="卫视频道",海南卫视
+http://207.56.13.146:81/cdnlive/lyws.m3u8
+#EXTINF:-1 group-title="卫视频道",广西卫视
+http://207.56.13.146:81/cdnlive/gxws.m3u8
 #EXTINF:-1 group-title="卫视频道",宁夏卫视
 http://207.56.13.146:81/cdnlive/nxws.m3u8
+#EXTINF:-1 group-title="卫视频道",甘肃卫视
+http://207.56.13.146:81/cdnlive/gsws.m3u8
+#EXTINF:-1 group-title="卫视频道",四川卫视
+http://207.56.13.146:81/cdnlive/scws.m3u8
+#EXTINF:-1 group-title="卫视频道",重庆卫视
+http://207.56.13.146:81/cdnlive/cqws.m3u8
+#EXTINF:-1 group-title="卫视频道",河北卫视
+http://207.56.13.146:81/cdnlive/hews.m3u8
+#EXTINF:-1 group-title="卫视频道",湖北卫视
+http://207.56.13.146:81/cdnlive/hbws.m3u8
+#EXTINF:-1 group-title="卫视频道",贵州卫视
+http://207.56.13.146:81/cdnlive/gzws.m3u8
 
 #EXTINF:-1 group-title="🎞️电影直播",华数电影
 http://hmfs.f3322.net:3388/hls/40/index.m3u8
