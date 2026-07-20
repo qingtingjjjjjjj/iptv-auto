@@ -3,7 +3,6 @@
 
 央视频道,#genre#
 CCTV1,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-CCTV9纪录,http://txycdn2.video.qq.com/1755788302.m3u8?time=1784450576&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIAwp-btF5OrpLkR8EKC3OPe0tG7ERA5T2K5UxUBREuxHEMj1KANPnU8x2BsJTlDd_QwBcE-_DM006L9lRZYap7AuAfmNG8rWNOzOqadEtrnwgwrjLbuGGZvOfJAG81Kk70SXjy0bxnxiFccvsFDb34r-SCLtWMfVEdHxJC5YRPytLhX6VEaBoB5q0mQo-AiuF-zQBj27G21zQ6BnTcgSGLuRTh_1X8LfVIeXZPE3cCu7WpqnBMOx4Q2Fth_SXgSIyU9QLZvgxT1kFiQS_w04sVNeUsBlkIeO1zg8H4LdJ7JAl8jhfvXxna9rJrnXx4JIGsSaui8gvi0EbTLLm2kNZ3FT5NO9nivEOA1oVO5Z2o25QLSAin36Bkt48bcMtDKxlBQYCp-Z4ypWUxh08oag-NWcYFhWLUDj--f5KB9SXrTc7iJK2Mu1wPD5_Ft5bristoxEgCL-lhOGA4BfF6lWwuje-c6de0NXbG2Ric-o7PRlk9ZBRc6NMPKN5U1IDBE3HoTnm1YL9V-yu53Xx8ugX9gZqRFlp_krXaoEpzWLw_HWp2XE&drmtype=0
 
 🎞️电影直播,#genre#
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
