@@ -1,14 +1,18 @@
-其他频道,#genre#
-广东珠江,http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
-#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml,https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
+央视频道,#genre#
+CCTV1,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
+CCTV1,http://txycdn7.video.qq.com/1370437002.m3u8?time=1785115561&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIKoouH31dIxH-lMKFLS2N_JnfUD777MEaiVbARb01vhrEJ5V0iKrKTHrOWpdMUVzKN8BcOxoTHZhLYPXQiEWt2QGPhimybATvnq0SZrJKuDYGdkWLUZ-iZLwgHjvSq3Ls3SWWsONswrighs0hdmlwH7YadY7iZanB9b7_awNjBAHhXSCmoUFEFkVOP2F1T2D7Tr-oW3rulcG_ZLWu7pAE8qm__dtAfM5-f6GM8vu6ilAHzCTPbu4NFh5JxlK14yYyKjszgJ7GR6H0EO-3vsW6-FjLnPUFpS27_0f6et_aj2gOCJuvF_9D76qu8brdDYr8gRBd4EbRJigmk8ofpkgwounHye0GI7gAvDQY4CcEUavIqwfW-iL21_8AF-xXhUDXlk5g4UmHRrFW7U3wkFn347krFcHv-iQYrRQkafvW9ZrYBnGd_Zbrp-F4a9tl8s4G7FTM5XabxbiJjLJZpJAvcBSPcIFAjkttgKPf843hfB5MWvYCy46iI5yXcL22tg9wZCkVK-aUtLT8vN4lRNuL8YIkLERIEfjkBq-MWGsGQISh3DU&drmtype=0
+CCTV1,http://txycdn7.video.qq.com/1370437802.m3u8?time=1785115298&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIME4mk5nNcErGunIyfigIYpnLYjnUtaZjv9hDPuK3VhqEPHIZkaP5EQvmtzPrwM9dIIBcE8nOU13nv55qc2kyV76ZBUs0fQdWcLUTkDgaMj9WETowYkGlHwpqydt3rchuipb3_c4C2a5Cec428KJw3yyh53_HA9pL1O9R5TRAcGvTut4CD7TIsrK6f6RfVqHnBAXRMeryuM-dkYb4tAQfZXmUcMP2MHP-38Ewsmwd-529BeEw8iyhlbaXhcig4gC2D4GCenlISc-GcjmPsYrrBV4m6hGNnmiv_dK2QbjsVxG-XdFe9OK9z2FsjjqgMNw5IvvwOrSj6buYrhKQhfVKq-P0DfK4hP0e5EcVJoT5Ei59D3Ti0ThvsvQtn_kFhrmdo6-BajAcvaEqnZepn9g95F2xz4VHNRjQ8fPKdbZpCa8yNjWTbVGvzcNwKy7E7rOPmb-BhLRDjErN6O5h0ph4-Q-Kz7vo-EXbGg4yPdltGqZgpE-OnbfxK7tiPb9eMXFEaCKiqmRo5Qya4YaB5vslFvwXVs8yIxM9Qo-EZGuEI_GbW5B&drmtype=0
+CCTV1,http://txycdn4.video.qq.com/1755789202.m3u8?time=1785115487&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIF0iW43pu9yr2yClEu_d2uT73MdbBUbU8oaNlkdr5pypEFRNE7ZHfyPulohCfko__ekBcCaHVoUArvlXhXIyJ7gEC1dwcj1KgMDAZh0TStGV8BWYJGU3oJwQMLqRpupO9y6IZ17u3yapeX_S0Y275bKQtQVQEhwHSZbOiNZBgjKzEkix3SFrT2zrx6eGIQqWjmMoRZJE9PUtxoGfNJNm4zl9qvULs9UU9uM3TopDmYeoJRfM9yoMWfJCik2_W1GA_WlEywt3C8c3FCm_kdO0S6E6mTcg8OJ-nU8zmOqgrhbuuSXD0Gns21njucboqRi9-vUPs0dDCAK2e7KUAYSePtlKo_j9lpcDSQ0sUt3ZfBL3VOVP5SAQjCuI_1k6Z7oHfnGsXBoQNt1IdBban3HrFH6m8kb5M4bAkTkVm4V3VvBBSfoMsAVd5d5WxUHV_668Vk-i5ghyMqN5gndGa_iMIYQ-FAYX_v08JPJJzi4GeW0qbyzrNkx4fs-Zs0a2YP4HvftAsgfkHY49twYoENQYHOwKIb1o1D1pAabH-Z1YtX4sqBCM&drmtype=0
+CCTV1,http://txycdn4.video.qq.com/1369932002.m3u8?time=1785115451&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIPr4tLOo73azyyDJtVF0cHA7GpSLo8XpaBkEMBLpdmgFELTLD4mp6LdYaE6dn57p-7UBcDU4m7BDRqwBkrnvncopd9rJ1V_Rord-_xi4QWTrDiEIqFazAHCY7NX7FuqD8EX2-yTZZi1rmEbhQF7JvNcTWtQkuxF3Lvs0TFbjlAf7-I_bivnSzXhaR8WyOAgsNjW6aigSgd5oJ5Wd-d9ME1g7GJD8pPWHWW_AuOEPs6v0q3hZmJ2hOuBHsuzaHhItUi1omHKYxYhLlu8ljXlqYoia_wY153yTU704USKOQj6ImH2ISNdsCHxQGj_UmtrIyvm8FDq0as_bnx-6o5TqMifl1GDBwqkkwj-ckPHBwZMOKN0k0HR7LWqIYy7cAJ0MafRwJj_5lRLxdL2pD5gsO8R5P91gIt_C-_-n6c57JmiYuMidMfDM9lJvjaVRjXW6kgpl7f8SnflJmzE6kcoOyx33TSNaouyhYktsJgeZNzTNsBXl-cYkwz_oJ3vy64LbYefJR7ujP3Ow-X5hPyuEsQoN4gpUGY5iXzR5XmKaRrwZxtB_&drmtype=0
 
 卫视频道,#genre#
 重庆卫视,http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
+天津卫视,http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
 深圳卫视,http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-湖南卫视,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 
-央视频道,#genre#
-CCTV1,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
+其他频道,#genre#
+广东珠江,http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
+#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml,https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
 
 🎞️电影直播,#genre#
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
