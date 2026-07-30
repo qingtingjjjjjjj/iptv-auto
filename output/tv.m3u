@@ -1,25 +1,21 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="其他频道",#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
-https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
-#EXTINF:-1 group-title="其他频道",广东珠江
-http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
-
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://txycdn3.video.qq.com/1755789202.m3u8?time=1785365644&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIEn71-NBordFPWXmLpJjbfPX7uH4_YiFZk0CCJbAlsBcEEn8amv1Lj9zB07Vk7tBb6ABcLnUvHop_MjHu5OD8QAcZEkeKJ-bF-0-KSpkaohXmRwpAt5wdl1n5iTr4_7xhY_z4x6MjbFIE2zj6ccT8bxefXXpZiVDkcHC_ib2bFNu0ecB5i67sJ7-hEChSsD_oxKuyeJ1zA762zynf4uhtr7CD6nWKgprESVz5hm3ARPt1L7w8_qOBIE4dssWMMf8IzA9iWceSN1Ur4nfS1XT1ZbcaMXn3uDYnP1HowudluFdg7VfDgqND1cF9oc6nD9kOExgqbf8iIfWPCVUQ7Jg5jx5Oy_BL9gVY_jcrTB3w4ptQYDj3omsjmcb85FmWY6Z_yCVkjYBmV8BaOhaNbuETgF5gX0ODrlRu6Hsv8fPyh0A0nFK2EC6S70Ai-UDdpxdHj1-n1uXl5r9_gQUsmuMA7HAdTAgcivli9sxu5O6pPmTLwk5BhZWB3iTUH9wLTXhR5FDZkx6RPYL2iu--uBNuSkCdOsUyGbW_CXQ9t8-33wOHCD3&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://txycdn6.video.qq.com/1755770102.m3u8?time=1785365533&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIBzlutu-2RYoOtG2_a0KTiPEgyXNLD6sOZC38BwipfdkEGeg6EAigasI4ObYfQfu1fEBcELVF-ZpL9bDA2uXYWUhlqvEm1fNTNQwSHrK2tc4pPLS5HF4D26reK2NhlatFR9NZKzcAgMjRmjMMpH2xsipaOBco1QIBP3nSs5GTMWFfFThCXFcH1LIx0rK_spMbrFtiR6DCN5yevjl21R6UZKl_Q0AQZmEiV_2dq3jUZKZvw4_IdfPbjiEh1R54JxcVd7RXnFN-hgWCw7lujVPoWFDkKBwdm4-ByH2zahWuqTEdbkIxE6pYlA6StQ8UrXPVhn6x5nOyok18Yi6HdhqXrkM7ZadXfUqpoZwQKCc9emJu-qKOGFo0MXJb7GeND-v7wfz8nejbU-WshKhw0A2-jiKDD1a1q8MgnfHdFHgZ9w-BNmuKtzSorrlSchFNfkWnUUgvdsuBaQmpkUiTVbBxDZSH1J5UZgMTu6PMLkclTJml754Vi8PyfxOoNBnIEdaoXnaHxV2rK57S_uNW8JMRoJ-6IN75mJgEeuaf7aRAiXf2dds&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV7国防军事
-http://txycdn.video.qq.com/1370436302.m3u8?time=1785365916&cdn=txycdn&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIO2772wKkrYWe3TQa_ZwZomAyVK-PHBVVWRnwlmEVlesEH7MWlUng5Mejh9iM6lj1kQBcDZIfz2WFz_ZX1DcOc63SrG6RaKYM1UPIqRJboulFbIsTS6aQUy0PukTQgZ3A_SkXoA1QUNaSim6EQaQuUokhsphuVR9Z4vWkZPBlyvrlUPvJU49AyXJu3eb5z7GLb010GgIr3Xbn_6OOE9BlPhkBuUzTxSvIt2NuZhJhiAW6_Ru1v-8J_YxyMI03bhJQVT4f2iQyNhPMScgoH4yoyc-SXXR2IYirLonv9pcvEV-ZVR6EHM31gQLnlutzDeYI9dxaTK22bneDbOBdB_NH8rBUq9eJop7uJfC7Qjml6NzSIdgQERdGtI8xNLs-zs81LSPIVAEogRnBL4lhp7RyXBMdTWuM2hl7X9LASnnhRAjEiTplHqPfUf1iBtLQxbXM45VPx2-AvN83GFXg4zApd4aV8_07t5s5LRFEzBv6uj8QxCPSj0ZBZnlLuj71mjm8sq8V3b1tcUXLCxU75KHe2e7lQQzrFhEC_oyf7XsT_O1os0M&drmtype=0
 
+#EXTINF:-1 group-title="卫视频道",天津卫视
+http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
 #EXTINF:-1 group-title="卫视频道",重庆卫视
 http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
 #EXTINF:-1 group-title="卫视频道",深圳卫视
 http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="卫视频道",天津卫视
-http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="卫视频道",深圳卫视
+http://139.227.21.22:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 group-title="其他频道",广东珠江
+http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
+https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
 
 #EXTINF:-1 group-title="🎞️电影直播",邵氏电影
 http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
