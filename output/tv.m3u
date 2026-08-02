@@ -1,5 +1,12 @@
 #EXTM3U
 
+#EXTINF:-1 group-title="卫视频道",重庆卫视
+http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="卫视频道",深圳卫视
+http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
+#EXTINF:-1 group-title="卫视频道",天津卫视
+http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
+
 #EXTINF:-1 group-title="其他频道",广东珠江
 http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
 #EXTINF:-1 group-title="其他频道",广东民生
@@ -7,27 +14,8 @@ http://38.75.136.137:98/gslb/dsdqpub/gdgg.m3u8?auth=testpub
 #EXTINF:-1 group-title="其他频道",#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
 https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
 
-#EXTINF:-1 group-title="卫视频道",深圳卫视
-http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="卫视频道",重庆卫视
-http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="卫视频道",天津卫视
-http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
-
 #EXTINF:-1 group-title="央视频道",CCTV1
 http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://txycdn3.video.qq.com/1755789202.m3u8?time=1785552161&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgILIWDuVZDbxR5I36dD51MFZ72Fk68qEUvzKntkzLsXFQEOtSc_NU3S8Bsx7ZOzRuxjMBcAL-EgQJ2V-QCX3Rsr-QcemlKiPLDr8MaUFwxocWfwAsWR7Y5Z-KjdRH3ygsh6WzofvxNleoDSQn_pVQxAZAQ5l_-is5ZePINA3_ReOnY6t8cChqokAppuJntfoXduqKWobjPZ0cNfFvhD0QNuduqlL8479e4-J8oDluLb-Ft4otWZvWAGFxWF7Hkn4DZaPd2TdHtc904kdCBX1xYDuCGEM9g_3NEa2E9pTC2k_rM02bRj74s8dkTUpfCPK35NtiXjslmbAdca9SYQiR33X74JvnOUVFU0clftBA2OLGELwSWRaMN04lLUbetJBZ5DwvhPXpTKJ5KY9Z-oOusFYcFKI5sMqN2D0x2m6UMfWPdSGA5GpMj3C909RK3bw2scQncrbcp9SGQp-GwcCd5YOwVIJZX3_XTF3AmNYuacbMr7O3ZGUGVXlO5s2nN7loVL0wCSe0Y9lmlMG2Z13-kEweAcivQchH-xc2IrYDG8YlRiTl&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://txycdn2.video.qq.com/1370782102.m3u8?time=1785552013&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIAcE6Dqb-6LG7XRtB5GZj7L5WY6bjZ9eEKmfdFp02X_OEAgv_gj-bcZ6-Gey4v_Yg2QBcL7VJ_0lqv3ODxs1nAH01A3t8uDC7V3jD8n3idQsDq08nm2BeELzFXUEDn25SFOwpQgjpjNLnCpJ1fv5jAa9dWfZGqXR5Q-93KVjDNEwAYQQw2KeUnHkQkkEjXqrgKUdNrG10mnj01ZbmtYJaQ_Ne4gZR2yv4XpHH7xokzzJpZFCTDFPjYxYZWMQMQoyPgedot5KAJwUmZKGa9BPL66xouXb4PG-kkezCPga2a1qL0bHR_LluOX9ZAdNl-7oF25cB0QNiz0OjpUkMgELZthLSxY-_hZNJeGqjUdb3mPVxn5gRufRnLCdaH-x19eSgE_4CG_PEZpkx23jwEJL1pXCBaFiq--egcu6fQXByE-nQc3qbkHpPUjVv31SH8HG-ILbIRF1NUskDcrJsj0zVEryMgjmGPXC_uXqDhM3dw_TG5w8auJL43OxePJAe38W5l8CFmYb0py2ooLaKyFyxwir2gpKq-8MI5-EoYPprb2PmDcG&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://txycdn1.video.qq.com/1370437802.m3u8?time=1785551971&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIFjV0MKL392xxkRXiV7WSgNisHawE17qPpooAWjwBvwkEFydU9RH4irqH59b9BRd508BcGWRQ6fu8IcBrEAYLdxvv1B3OH7afjCqJNUcc_PPNlDbBCc4UCBDwgrl5JiWY1s7uY4XNNjK0nr9JJ-zb637gXkZ-5_ym4SnCZj_qXF9f9l9cqhructdlDLcBSUneoNyF0uTHicUK3JoYBDgfISkDlNNNiNym2hamG4hVwIswErvNhWoruKAGFIicZWQ8Fs_kL-WtJVs5KdF_eCIJ9iU6z4JdsUAGmox0t48lbHR3oVUBC_eimzBD3DjM0HS7oVQL6DOPbJ78_Dlpexx7YSFqER5Mhes4gjfLv2i2EJH_kxPAEj1Nwh636AEH-ET5ITs-icDNLZNtnyrFdU6XvTFkXjIbC2nc7cIgYWUMjJTmWB3FuGTuGQ7zayPt-ik7nswZ4y4d2zshGJMZWaH41-iUiuRVKXhBOYkHui95k_OjkskGcEsfG-k71LLDGo_EAF6M5_AC1zqbJK4nL2Ri7YUCYlyS4yf3P5KQTwqi9yFr7-b&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV6电影
-http://txycdn6.video.qq.com/1755771402.m3u8?time=1785552479&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIOaoEI1Nlmp390A18p9XcmrYFauamB0MvDV31NSsfWPCEI3ZU0tmgqyZBBIdyaZE56QBcBuEkw4uiycG_2uQ_bTvMmC7kFm9dn0LBfGJp32-chsGBGjkOqtMFxpazax8hfmjhJTlCrDrAsHBYJdlGtNpoAjutofQqB2uPDx8WuZUjch16qkq0X5pBd4ye4XQA5M1vwq7acAOu6aSQefbQT-kvA93-S8D-L-zPT0RyuGYIJ55PwkbRHeLc5RnUgGlL2JeUVoYL5MLyI7c-sr9UARBy6qFjx20CBQfxfpAqUlD6TkS0oR9j1_qn1gErUh0lFD_77xCMLcSsJJ5rbfMM5tlpeoHbDIHJzcw0IRp5hX_bqa-7WVrvyrzAwjVt7Zv9PnvlhtZI5W64kiAKVQIxLfcHjHdppnvy95QHAegXJ8Bst3gcZL9QTPzXOISXNrXCDZ2FkYj-OP3v8sC34HxZFssrjG9SWWV4W7Lq5-Hd31c_Kyp8tswkVx2HSdbOaXMlAELdhFk7yQoqeGWzmNNf1rdnR4kZopdQnvBsWvO8ZXxbvAp&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV7国防军事
-http://txycdn7.video.qq.com/1370436302.m3u8?time=1785552438&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIGTXUcz5HnMeLCJa_2vComlx7lzYw54Ga87mSZSZY5-1EG-8odA5G2faZ1TkEUsj62oBcLCarJdmvxbAoCrfQowmLynWHqoyBEHHAXAPC1omX8XG1dxQcT2E2u94yyGa9Cxjwcd1p3drdJQHsQg_eiE12ZyOWfb9VP41iqGDEELTiSUN9CnwstdWJ02q9F5C3I1CP9tuC1NcuxwW5vz7sqKKNJRX1S2xIdLx3L3EtFR-teBPA3i5_MugQaOTbPV2SsIEtGzG4Qg965Om8p_J6bG5HXA4giMq84tsw1mhq4f91GJ80bxdHxVE2ZV8hu0_OASIaVnCtrjaLCoPcT3-rspNBtB_v0QJ2UIvwmNGL5vcTvsYiN792ZEXUg7PQa1_aJOMTKtWjmq9pKP0ymSMuGdGYAAV0PRC3530S9HqxvBzy_rsZNImT2AXPW-u8y4YBphdYR4vmOqyTCtoCEqf00VgEU5QP0eZRcVOQb_aaVaoFTLLTAVmArCOgLIcor1-hWDt4uymJLVhiouKz2CcbC2tX9wo6b9jQXBrxmxUwnna0jEd&drmtype=0
-#EXTINF:-1 group-title="央视频道",CCTV8电视剧
-http://txycdn3.video.qq.com/1370436702.m3u8?time=1785552385&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIEKz0HNtvfgb6xxlcZwB25aw5DKZlUjklphuNBRfrlgSEMriTIalkLkD3Ms0fp5TXEsBcPvDsJgkAEWY7HmxnJ21dURK4fdic6S8YB4-m-GO-D6D3yBNIOfb4mR7k3LkGiHUypJV2__8C3TMACDiwJiJYvKxAj7pzmCveB063UKICcAmZFowAwq3pkDcz4QbAc_wdt1uIZLQNa6tZQmC0g3P5D7ZHDS4VSTA0fkolO9h0DuRxUXorlsg9vo753rtuqFs8tlY9XR77QUZUAlEz8kckoOypnh5dOBgQ4MSSbf9RMCIaSXw9xT3olvYRNOQIJnswWKBS7-z4IMiM09gWqRVQ9ueh6_MBulke6jYNtCJovm-jdtRI1QjFMRnt5JULhRH_mpmNlJrf7_yl9n7l1OLvTzpXcZmqsm0KAuroSfHykIYpzC8gooxFTbXfIce704fn2x0kkYVGib5Rb296UjwDNZS7msVYU8ucny5PhcGwCCNcrh018LsfILQDObXjLHMVuN7s6j3OekGDsnxu_D053xKX-53JfeNHZiJk-9YU4yE&drmtype=0
 
 #EXTINF:-1 group-title="🎞️电影直播",邵氏电影
 http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
