@@ -1,16 +1,18 @@
-卫视频道,#genre#
-重庆卫视,http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
-天津卫视,http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
-深圳卫视,http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
+央视频道,#genre#
+CCTV1,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
 
 其他频道,#genre#
 广东珠江,http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
 广东民生,http://38.75.136.137:98/gslb/dsdqpub/gdgg.m3u8?auth=testpub
 #EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml,https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
 
-央视频道,#genre#
-CCTV1,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-CCTV7国防军事,http://txycdn5.video.qq.com/1370436302.m3u8?time=1785826670&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIFZXflU2ERvvDidxgircP3s7UHAM7HubnXmhTWHw33rUEF_lHD_jUCF_JYn9Mf9EKMkBcAJGbdA3B301bjKG-pE6DdAI6aoKt9_oHHyr7HCR5iXnth9hAbk-QYkt3y01AsemOaH3raVY1WutH72kwWHTMR4XPIF0S-bofto1nAWyhMMPXkCUVUZ698fjCh6VT0SmAKqHEtfmpJC5ZU-utkUybljLv7m29OczacyCxcUG5x_pnDgrI5N7Fc6klR8VWpOLDgHDxc_iTS5-cS5kOAVZ4eRuHkpjzV40Mjzox5JK3vAcUOx0kFNucuUJOzky71muU2B_HyYpiMbRPV-61EnP_WU-j5C3rfhrbI1AatYX4368E3TcOEv_RKpiAGSpLSwVmdcJRaZs4wIkb-bkzIVt4f13u8PYenx7iCwTuA4DeBmNUptprDQDLZD4Z6vuf9FIAJHlGLGKQ9e180_82BUBbR4zAacPAh8e3fxUAwowR1BSmSF07uhX2o6AuJHUEAutnZvhu7WWjaVo9GVrJFvi5DxdcvcsDz7EGY-CFFnLbojR&drmtype=0
+卫视频道,#genre#
+重庆卫视,http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
+深圳卫视,http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
+天津卫视,http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
+湖南卫视,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+浙江卫视,http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
+浙江卫视,http://ali-xwl.cztv.com/live/channel01720Plxw.m3u8
 
 🎞️电影直播,#genre#
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
