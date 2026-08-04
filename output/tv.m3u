@@ -1,25 +1,15 @@
 #EXTM3U
 
-#EXTINF:-1 group-title="其他频道",#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
-https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
-#EXTINF:-1 group-title="其他频道",广东民生
-http://38.75.136.137:98/gslb/dsdqpub/gdgg.m3u8?auth=testpub
 #EXTINF:-1 group-title="其他频道",广东珠江
 http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
+#EXTINF:-1 group-title="其他频道",#EXTM3Ux-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
+https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml
 
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-#EXTINF:-1 group-title="央视频道",CCTV1
-http://txycdn2.video.qq.com/1755770102.m3u8?time=1785747213&from=player&cdn=tcloud&sdtfrom=v401010931632&platform=4010603&butype=31&HLSP2P=1&vkey=nvkey_AQQgIH0MFzpbFcqLDkfeeQYipi77Anc-CFdoVm7DRUBb4wPrEA2OT8Vegl6RvToZot4PRsIBcI_Tg6mql77OvmpB6usHz9b2qiGT0YdX47_jlb6iUNcBfXfQovsIc0Cjsgdeg6pzJ29B9agjuhphCCIvbAq_IlHLiKF7p4GTN-jyddNrPbgipuBpC9qI3JiAKRnseHeDfhmfte-z1Epdv8JaR9R-i1W9IXHPdcW4cJ_KLDxuuHnUUCzyFFGkdF9GAt5Msnaeco56CtO7w-keXkQawoZF6rpjwBC_9TPjnOiWeyONsU2gCbm3wkj-Dt1qjp96-BsBg82dQdAhtD2d-nORXU9ejJWxLhIOqVHc8plgjhF7-qdyaXblhJ5BLcCdIJwvWJ-h0VFzDubyKXtpbCGvIKDIHi8Hk5NtlNUG41mEdUYgptr12rgpNDzqRj9LjUvO1b-Q1HBXLhv8f9vTcBbhVDTgskv4Es9X33Tp0TZQc6kPG1eMC1ipB3ndqG8-hWjaL8r0LYUBFc8Ub-06nBSygQf8xBuJxSBePqn2CL2EFrYxcHy_&drmtype=0
+#EXTINF:-1 group-title="央视频道",CCTV2
+http://pull-hls-f1.douyincdn.com/media/stream-407987562509501100/playlist.m3u8?keeptime=00093a80&wsSecret=70ba7ec30965743accbcfb926a58fd7c&wsTime=6a6c7613&exp_hrchy=w1&arch_hrchy=w1&major_anchor_level=common&t_id=037-2026073118165145DD5015353E316620A0-ZYOHNH
 
-#EXTINF:-1 group-title="卫视频道",重庆卫视
-http://38.75.136.137:98/gslb/dsdqpub/cqwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="卫视频道",深圳卫视
-http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
 #EXTINF:-1 group-title="卫视频道",天津卫视
 http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="卫视频道",湖南卫视
-http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 
 #EXTINF:-1 group-title="🎞️电影直播",邵氏电影
 http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
